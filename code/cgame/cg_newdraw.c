@@ -1122,8 +1122,10 @@ static void CG_DrawPlayerHasFlag(rectDef_t *rect, qboolean force2D) {
   	CG_DrawFlagModel( rect->x + adj, rect->y + adj, rect->w - adj, rect->h - adj, TEAM_RED, force2D);
 	} else if( cg.predictedPlayerState.powerups[PW_BLUEFLAG] ) {
   	CG_DrawFlagModel( rect->x + adj, rect->y + adj, rect->w - adj, rect->h - adj, TEAM_BLUE, force2D);
-	} else if( cg.predictedPlayerState.powerups[PW_NEUTRALFLAG] ) {
+	/*****CLEANMOD***** //remove unneeded fields
+	}else if( cg.predictedPlayerState.powerups[PW_NEUTRALFLAG] ) {
   	CG_DrawFlagModel( rect->x + adj, rect->y + adj, rect->w - adj, rect->h - adj, TEAM_FREE, force2D);
+	//******************/
 	}
 }
 

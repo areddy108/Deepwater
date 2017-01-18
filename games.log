@@ -1,0 +1,471 @@
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:07 Item: 0 weapon_rocketlauncher
+  0:18 Item: 0 weapon_shotgun
+  0:30 ShutdownGame:
+  0:30 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:04 Item: 0 weapon_rocketlauncher
+  0:12 Item: 0 weapon_rocketlauncher
+  0:13 ShutdownGame:
+  0:13 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  1:07 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  1:12 Item: 0 weapon_rocketlauncher
+  1:21 Item: 0 weapon_rocketlauncher
+  1:26 Item: 0 ammo_cells
+  1:32 Item: 0 weapon_shotgun
+  1:52 Item: 0 weapon_shotgun
+  2:00 Item: 0 ammo_shells
+  2:13 ShutdownGame:
+  2:13 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:06 Item: 0 weapon_rocketlauncher
+  0:18 Item: 0 ammo_bullets
+  0:40 Item: 0 item_armor_shard
+  0:41 Item: 0 item_armor_shard
+  0:41 Item: 0 item_armor_shard
+  0:44 Item: 0 weapon_rocketlauncher
+  0:49 Item: 0 item_armor_shard
+  0:49 Item: 0 item_armor_shard
+  0:49 Item: 0 item_armor_shard
+  0:50 Item: 0 ammo_cells
+  1:09 Item: 0 weapon_shotgun
+  1:41 Item: 0 item_armor_body
+  1:46 Item: 0 ammo_shells
+  1:58 Item: 0 weapon_rocketlauncher
+  1:59 ShutdownGame:
+  1:59 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:21 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:30 Item: 0 weapon_rocketlauncher
+  0:38 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:45 Item: 0 weapon_plasmagun
+  0:59 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  1:14 ShutdownGame:
+  1:14 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:05 Item: 0 weapon_rocketlauncher
+  0:21 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:37 Item: 0 weapon_rocketlauncher
+  0:41 Item: 0 item_armor_shard
+  0:41 Item: 0 item_armor_shard
+  0:42 Item: 0 item_armor_shard
+  0:43 Item: 0 ammo_cells
+  0:44 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  1:05 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  1:25 Item: 0 item_health
+  1:26 Item: 0 item_health
+  1:31 Item: 0 item_armor_body
+  1:32 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  1:42 Item: 0 weapon_plasmagun
+  1:53 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  2:03 Item: 0 weapon_plasmagun
+  2:03 Item: 0 weapon_plasmagun
+  2:15 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  2:19 ShutdownGame:
+  2:19 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:07 ShutdownGame:
+  0:07 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:11 ShutdownGame:
+  0:11 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:14 ShutdownGame:
+  0:14 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\bot_minplayers\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:21 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:43 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:44 ShutdownGame:
+  0:44 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:05 ShutdownGame:
+  0:05 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:00 ClientBegin: 0
+  0:06 ShutdownGame:
+  0:06 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:03 ShutdownGame:
+  0:03 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientBegin: 0
+  0:23 ShutdownGame:
+  0:23 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:07 Item: 0 weapon_rocketlauncher
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:20 Item: 0 ammo_cells
+  0:20 ShutdownGame:
+  0:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:08 ShutdownGame:
+  0:08 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:37 ShutdownGame:
+  0:37 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:42 ShutdownGame:
+  0:42 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:43 ShutdownGame:
+  0:43 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:40 ShutdownGame:
+  0:40 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:11 ShutdownGame:
+  0:11 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientBegin: 0
+  0:02 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:06 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:08 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:10 ShutdownGame:
+  0:10 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:02 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:04 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:07 ShutdownGame:
+  0:07 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:21 Item: 0 item_armor_body
+  0:40 Item: 0 item_armor_shard
+  0:40 Item: 0 item_armor_shard
+  0:40 Item: 0 item_armor_shard
+  0:47 Item: 0 item_armor_shard
+  0:47 Item: 0 item_armor_shard
+  0:47 Item: 0 item_armor_shard
+  1:09 ShutdownGame:
+  1:09 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientConnect: 1
+  0:02 ClientUserinfoChanged: 1 n\Crash\t\1\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\1\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientBegin: 0
+  0:03 ClientBegin: 1
+  0:03 ClientUserinfoChanged: 1 n\Crash\t\1\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:03 ClientBegin: 1
+  0:06 Item: 0 weapon_rocketlauncher
+  0:08 Kill: 0 0 20: RevOk killed RevOk by MOD_SUICIDE
+  0:08 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:08 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:08 ClientBegin: 0
+  0:21 Kill: 1022 1 14: <world> killed Crash by MOD_WATER
+  0:30 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  0:38 Kill: 0 1 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:46 ShutdownGame:
+  0:46 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientConnect: 1
+  0:01 ClientUserinfoChanged: 1 n\Crash\t\1\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:02 ClientBegin: 1
+  0:03 ClientUserinfoChanged: 1 n\Crash\t\1\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\1
+  0:03 ClientUserinfoChanged: 1 n\Crash\t\1\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\1
+  0:03 ClientBegin: 1
+  0:06 Item: 1 ammo_bullets
+  0:27 Item: 1 weapon_rocketlauncher
+  0:34 Kill: 0 1 3: RevOk killed Crash by MOD_MACHINEGUN
+  1:00 Item: 0 weapon_rocketlauncher
+  1:21 Item: 1 ammo_bullets
+  1:23 Kill: 1022 0 14: <world> killed RevOk by MOD_WATER
+  1:30 Item: 0 weapon_plasmagun
+  1:39 ShutdownGame:
+  1:39 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\conni/red\hmodel\conni/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ShutdownGame:
+  0:01 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\Q3DM1\sv_privateClients\0\sv_allowDownload\0\bot_minplayers\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientConnect: 1
+  0:01 ClientUserinfoChanged: 1 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:02 ClientBegin: 1
+  0:05 Item: 0 weapon_rocketlauncher
+  0:06 Item: 1 ammo_bullets
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientConnect: 1
+  0:02 ClientUserinfoChanged: 1 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:02 ClientConnect: 2
+  0:02 ClientUserinfoChanged: 2 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:02 ClientConnect: 3
+  0:02 ClientUserinfoChanged: 3 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:03 ClientBegin: 1
+  0:05 ClientBegin: 2
+  0:06 ClientBegin: 3
+  0:06 Item: 0 weapon_rocketlauncher
+  0:10 Item: 3 ammo_bullets
+  0:27 Item: 1 ammo_cells
+  0:28 Item: 1 item_armor_shard
+  0:28 Item: 1 item_armor_shard
+  0:28 Item: 1 item_armor_shard
+  0:39 Kill: 0 2 6: RevOk killed Crash by MOD_ROCKET
+  0:41 ShutdownGame:
+  0:41 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:06 Item: 0 weapon_rocketlauncher
+  0:18 ClientConnect: 1
+  0:18 ClientUserinfoChanged: 1 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:18 ClientConnect: 2
+  0:18 ClientUserinfoChanged: 2 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:19 ClientBegin: 1
+  0:21 ClientBegin: 2
+  0:24 Item: 0 item_health_large
+  0:25 Item: 2 ammo_bullets
+  0:33 Kill: 0 2 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:35 say: Crash: Was that REALLY your best shot?
+  0:45 Item: 0 ammo_shells
+  0:52 Item: 1 item_armor_shard
+  0:53 Item: 1 item_armor_shard
+  0:53 Item: 1 item_armor_shard
+  0:54 Kill: 0 2 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:59 Item: 1 weapon_shotgun
+  1:00 Kill: 0 1 6: RevOk killed Crash by MOD_ROCKET
+  1:02 Item: 0 weapon_shotgun
+  1:09 Item: 0 weapon_shotgun
+  1:18 Item: 1 ammo_bullets
+  1:20 ShutdownGame:
+  1:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:05 ClientConnect: 1
+  0:05 ClientUserinfoChanged: 1 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:05 ClientConnect: 2
+  0:05 ClientUserinfoChanged: 2 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:06 Item: 0 weapon_rocketlauncher
+  0:06 ClientBegin: 1
+  0:07 ClientBegin: 2
+  0:10 Item: 1 ammo_bullets
+  0:30 Item: 2 item_health_large
+  0:30 Kill: 0 1 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:32 say: Crash: Beginners luck... Again.
+  0:43 Kill: 0 2 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:46 say: Crash: Oh my! Xaero look OUT!
+  0:46 ShutdownGame:
+  0:46 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\0\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientConnect: 1
+  0:02 ClientUserinfoChanged: 1 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:03 ClientBegin: 1
+  0:07 Item: 1 ammo_bullets
+  0:48 Kill: 0 1 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:50 say: Crash: Avenging Angel can not coast along on her good looks anymore.
+  0:54 ShutdownGame:
+  0:54 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\0\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\0\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\0\model\xaero/red\hmodel\xaero/red\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientConnect: 1
+  0:02 ClientUserinfoChanged: 1 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:02 ClientConnect: 2
+  0:02 ClientUserinfoChanged: 2 n\Crash\t\0\model\crash\hmodel\crash\c1\4\c2\5\hc\50\w\0\l\0\skill\ 1.00\tt\0\tl\0
+  0:03 ClientBegin: 1
+  0:05 ClientBegin: 2
+  0:07 Item: 1 ammo_bullets
+  0:32 Item: 2 weapon_rocketlauncher
+  0:36 Kill: 0 2 3: RevOk killed Crash by MOD_MACHINEGUN
+  0:38 say: Crash: Hmmmmm.I occasionally need to be reminded that I am not immortal.
+  0:48 ShutdownGame:
+  0:48 ------------------------------------------------------------

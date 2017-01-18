@@ -1177,6 +1177,10 @@ void ClientSpawn(gentity_t *ent) {
 	VectorCopy (playerMaxs, ent->r.maxs);
 
 	client->ps.clientNum = index;
+	
+	//********DEEPWATER******** //spawn with armor (oxygen)
+	client->ps.stats[STAT_ARMOR] = 100;
+	//*************************
 
 	client->ps.stats[STAT_WEAPONS] = ( 1 << WP_MACHINEGUN );
 	if ( g_gametype.integer == GT_TEAM ) {

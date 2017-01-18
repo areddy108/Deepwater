@@ -1528,6 +1528,48 @@ static void CG_HasteTrail( centity_t *cent ) {
 	smoke->leType = LE_SCALE_FADE;
 }
 
+//********DEEPWATER*********** //create underwater blood "trail" (red smoke)
+static void CG_BloodTrail( centity_t *cent ) {
+	localEntity_t	*smoke;
+	vec3_t			origin;
+
+	if ( cent->trailTime > cg.time ) {
+		return;
+	}
+
+
+	cent->trailTime += 50;
+	if ( cent->trailTime < cg.time ) {
+		cent->trailTime = cg.time;
+	}
+
+	VectorCopy( cent->lerpOrigin, origin );
+	origin[2] -= 16;
+	
+	/*
+		*CG_SmokePuff( const vec3_t p, const vec3_t vel, 
+				   float radius,
+				   float r, float g, float b, float a,
+				   float duration,
+				   int startTime,
+				   int fadeInTime,
+				   int leFlags,
+				   qhandle_t hShader )
+	*/
+	smoke = CG_SmokePuff( origin, vec3_origin, 
+				  25, 
+				  1, 0.02f, 0.02f, 0.33f,
+				  3000, 
+				  cg.time,
+				  0,
+				  0,
+				  cgs.media.bloodTrailShader );
+
+	// use the optimized local entity add
+	smoke->leType = LE_SCALE_FADE;
+}
+
+
 #ifdef MISSIONPACK
 /*
 ===============
@@ -1835,7 +1877,12 @@ CG_PlayerPowerups
 static void CG_PlayerPowerups( centity_t *cent, refEntity_t *torso ) {
 	int		powerups;
 	clientInfo_t	*ci;
-
+	//*******DEEPWATER********** //"bleed" if health is low enough
+	ci = &cgs.clientinfo[ cent->currentState.clientNum ];
+	if (ci->health < 50){
+		CG_BloodTrail( cent );
+	}
+	//**************************
 	powerups = cent->currentState.powerups;
 	if ( !powerups ) {
 		return;
@@ -1851,7 +1898,7 @@ static void CG_PlayerPowerups( centity_t *cent, refEntity_t *torso ) {
 		trap_S_AddLoopingSound( cent->currentState.number, cent->lerpOrigin, vec3_origin, cgs.media.flightSound );
 	}
 
-	ci = &cgs.clientinfo[ cent->currentState.clientNum ];
+	//ci = &cgs.clientinfo[ cent->currentState.clientNum ]; //Shifted earlier in this method
 	// redflag
 	if ( powerups & ( 1 << PW_REDFLAG ) ) {
 		if (ci->newAnims) {
@@ -1890,6 +1937,7 @@ static void CG_PlayerPowerups( centity_t *cent, refEntity_t *torso ) {
 	if ( powerups & ( 1 << PW_HASTE ) ) {
 		CG_HasteTrail( cent );
 	}
+
 }
 
 

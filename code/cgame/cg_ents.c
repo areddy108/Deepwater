@@ -232,6 +232,17 @@ static void CG_Item( centity_t *cent ) {
 	float			scale;
 	weaponInfo_t	*wi;
 
+	//*******DEEPWATER******** //emenate bubbles from items
+	vec3_t			above;
+	vec3_t			head;
+	VectorCopy(cent->lerpOrigin, above);
+	VectorCopy(cent->lerpOrigin, head);
+	above[2] += 128;
+	head[2] += 32;
+	if(crandom() < 0.5){
+		CG_BubbleTrail(head, above, 2056);
+	}
+	//************************//
 	es = &cent->currentState;
 	if ( es->modelindex >= bg_numItems ) {
 		CG_Error( "Bad item index %i on entity", es->modelindex );
@@ -257,9 +268,15 @@ static void CG_Item( centity_t *cent ) {
 		return;
 	}
 
+
 	// items bob up and down continuously
-	scale = 0.005 + cent->currentState.number * 0.00001;
-	cent->lerpOrigin[2] += 4 + cos( ( cg.time + 1000 ) *  scale ) * 4;
+	//*******DEEPWATER******** //items bob faster
+	//scale = 0.005 + cent->currentState.number * 0.00001;
+	//cent->lerpOrigin[2] += 4 + cos( ( cg.time + 1000 ) *  scale ) * 4;
+	scale = 0.0005 + cent->currentState.number * 0.0000001;
+	cent->lerpOrigin[2] += 16 + cos( ( cg.time + 1000 ) *  scale ) * 16;
+	//*************************
+
 
 	memset (&ent, 0, sizeof(ent));
 
@@ -488,7 +505,7 @@ static void CG_Missile( centity_t *cent ) {
 
 	// spin as it moves
 	if ( s1->pos.trType != TR_STATIONARY ) {
-		RotateAroundDirection( ent.axis, cg.time / 4 );
+		RotateAroundDirection( ent.axis, cg.time / 8 );
 	} else {
 #ifdef MISSIONPACK
 		if ( s1->weapon == WP_PROX_LAUNCHER ) {

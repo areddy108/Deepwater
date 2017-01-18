@@ -360,12 +360,17 @@ static void CG_RocketTrail( centity_t *ent, const weaponInfo_t *wi ) {
 
 	ent->trailTime = cg.time;
 
+	/******************************DEEPWATER****************************** //create bubble trail no matter what
 	if ( contents & ( CONTENTS_WATER | CONTENTS_SLIME | CONTENTS_LAVA ) ) {
 		if ( contents & lastContents & CONTENTS_WATER ) {
+	/*********************************************************************/
 			CG_BubbleTrail( lastPos, origin, 8 );
+			return;
+	/*********************************************************************
 		}
 		return;
 	}
+	/*********************************************************************/
 
 	for ( ; t <= ent->trailTime ; t += step ) {
 		BG_EvaluateTrajectory( &es->pos, t, lastPos );
@@ -427,13 +432,17 @@ static void CG_NailTrail( centity_t *ent, const weaponInfo_t *wi ) {
 	lastContents = CG_PointContents( lastPos, -1 );
 
 	ent->trailTime = cg.time;
-
+	/******************************DEEPWATER****************************** //create bubble trail no matter what
 	if ( contents & ( CONTENTS_WATER | CONTENTS_SLIME | CONTENTS_LAVA ) ) {
 		if ( contents & lastContents & CONTENTS_WATER ) {
+	/*********************************************************************/
 			CG_BubbleTrail( lastPos, origin, 8 );
+			return;
+	/*********************************************************************
 		}
 		return;
 	}
+	/*********************************************************************/
 
 	for ( ; t <= ent->trailTime ; t += step ) {
 		BG_EvaluateTrajectory( &es->pos, t, lastPos );
@@ -2234,7 +2243,7 @@ Renders bullet effects.
 ======================
 */
 void CG_Bullet( vec3_t end, int sourceEntityNum, vec3_t normal, qboolean flesh, int fleshEntityNum ) {
-	trace_t trace;
+	//trace_t trace;
 	int sourceContentType, destContentType;
 	vec3_t		start;
 
@@ -2245,9 +2254,12 @@ void CG_Bullet( vec3_t end, int sourceEntityNum, vec3_t normal, qboolean flesh, 
 			sourceContentType = trap_CM_PointContents( start, 0 );
 			destContentType = trap_CM_PointContents( end, 0 );
 
+			/******************************DEEPWATER****************************** //always make full bubble trail
 			// do a complete bubble trail if necessary
 			if ( ( sourceContentType == destContentType ) && ( sourceContentType & CONTENTS_WATER ) ) {
+			/*********************************************************************/
 				CG_BubbleTrail( start, end, 32 );
+			/*********************************************************************
 			}
 			// bubble trail from water into air
 			else if ( ( sourceContentType & CONTENTS_WATER ) ) {
@@ -2259,6 +2271,7 @@ void CG_Bullet( vec3_t end, int sourceEntityNum, vec3_t normal, qboolean flesh, 
 				trap_CM_BoxTrace( &trace, start, end, NULL, NULL, 0, CONTENTS_WATER );
 				CG_BubbleTrail( trace.endpos, end, 32 );
 			}
+			/*********************************************************************/
 
 			// draw a tracer
 			if ( random() < cg_tracerChance.value ) {

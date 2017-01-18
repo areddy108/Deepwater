@@ -1203,6 +1203,7 @@ PM_SetWaterLevel	FIXME: avoid this twice?  certainly if not moving
 =============
 */
 static void PM_SetWaterLevel( void ) {
+	/************DEEPWATER************ //make everything think they are underwater
 	vec3_t		point;
 	int			cont;
 	int			sample1;
@@ -1236,7 +1237,8 @@ static void PM_SetWaterLevel( void ) {
 			}
 		}
 	}
-
+	//*********************************/
+	pm->waterlevel = 3;
 }
 
 /*

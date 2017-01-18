@@ -1,13 +1,13 @@
  uix86
 
- Timestamp is 52585d40 (Fri Oct 11 16:19:12 2013)
+ Timestamp is 587e7a54 (Tue Jan 17 15:11:00 2017)
 
  Preferred load address is 40000000
 
  Start         Length     Name                   Class
  0001:00000000 00054e7cH .text                   CODE
  0001:00054e7c 00026904H .textbss                CODE
- 0002:00000000 00007c30H .rdata                  DATA
+ 0002:00000000 00007c2eH .rdata                  DATA
  0002:00007c30 00000167H .edata                  DATA
  0003:00000000 00000104H .CRT$XCA                DATA
  0003:00000104 00000104H .CRT$XCZ                DATA
@@ -436,8 +436,8 @@
  0001:00037790       __toupper                  40038790 f   LIBCMTD:toupper.obj
  0001:000377a0       _toupper                   400387a0 f   LIBCMTD:toupper.obj
  0001:00037840       __toupper_lk               40038840 f   LIBCMTD:toupper.obj
- 0001:00037970       __alloca_probe             40038970 f   LIBCMTD:chkstk.obj
  0001:00037970       __chkstk                   40038970 f   LIBCMTD:chkstk.obj
+ 0001:00037970       __alloca_probe             40038970 f   LIBCMTD:chkstk.obj
  0001:000379a0       _strcpy                    400389a0 f   LIBCMTD:strcat.obj
  0001:000379b0       _strcat                    400389b0 f   LIBCMTD:strcat.obj
  0001:00037aa0       _strchr                    40038aa0 f   LIBCMTD:strchr.obj
@@ -746,8 +746,8 @@
  0001:0004be00       ___getlocaleinfo           4004ce00 f   LIBCMTD:inithelp.obj
  0001:0004c090       _localeconv                4004d090 f   LIBCMTD:lconv.obj
  0001:0004c0a0       ___crtGetStringTypeW       4004d0a0 f   LIBCMTD:w_str.obj
- 0001:0004c310       __strcmpi                  4004d310 f   LIBCMTD:stricmp.obj
  0001:0004c310       __stricmp                  4004d310 f   LIBCMTD:stricmp.obj
+ 0001:0004c310       __strcmpi                  4004d310 f   LIBCMTD:stricmp.obj
  0001:0004c3e0       __strnicmp                 4004d3e0 f   LIBCMTD:strnicmp.obj
  0001:0004c4f0       __close                    4004d4f0 f   LIBCMTD:close.obj
  0001:0004c570       __close_lk                 4004d570 f   LIBCMTD:close.obj
@@ -1117,9 +1117,9 @@
  0002:000019f8       __real@8@4006b400000000000000 4007e9f8     q_math.obj
  0002:00001a04       __real@4@3fff8000000000000000 4007ea04     q_math.obj
  0002:00001a08       ??_C@_0BK@OJK@Q_fabs?$CIinv_denom?$CJ?5?$CB?$DN?50?40f?$AA@ 4007ea08     q_math.obj
- 0002:00001a28       ??_C@_0CM@IBFO@c?3?2ygpip?2quake3?2cleanmod?2code?2ga@ 4007ea28     q_math.obj
- 0002:00001a5c       __real@4@3ffe8000000000000000 4007ea5c     q_math.obj
- 0002:00001a60       __real@4@c006b400000000000000 4007ea60     q_math.obj
+ 0002:00001a28       ??_C@_0CN@JJJN@c?3?2ygpip?2quake3?2deepwater?2code?2g@ 4007ea28     q_math.obj
+ 0002:00001a60       __real@4@3ffe8000000000000000 4007ea60     q_math.obj
+ 0002:00001a64       __real@4@c006b400000000000000 4007ea64     q_math.obj
  0002:00001a68       __real@8@3ff7b400000000000000 4007ea68     q_math.obj
  0002:00001a78       __real@8@4006b60b60b60b60b800 4007ea78     q_math.obj
  0002:00001a88       __real@8@4007b400000000000000 4007ea88     q_math.obj

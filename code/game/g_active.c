@@ -109,10 +109,12 @@ void P_WorldEffects( gentity_t *ent ) {
 
 	envirosuit = ent->client->ps.powerups[PW_BATTLESUIT] > level.time;
 
+	//************DEEPWATER************ //base drowning off of armor level
 	//
-	// check for drowning
+	// check for drowning (only if armor < 0)
 	//
-	if ( waterlevel == 3 ) {
+	if(ent->client->ps.stats[STAT_ARMOR] <= 0){
+	//if ( waterlevel == 3 ) { Replace with only checking armor level
 		// envirosuit give air
 		if ( envirosuit ) {
 			ent->client->airOutTime = level.time + 10000;
@@ -148,6 +150,7 @@ void P_WorldEffects( gentity_t *ent ) {
 		ent->client->airOutTime = level.time + 12000;
 		ent->damage = 2;
 	}
+	/***************************/
 
 	//
 	// check for sizzle damage (move to pmove?)

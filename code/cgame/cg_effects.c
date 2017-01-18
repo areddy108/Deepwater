@@ -61,7 +61,10 @@ void CG_BubbleTrail( vec3_t start, vec3_t end, float spacing ) {
 		le->leFlags = LEF_PUFF_DONT_SCALE;
 		le->leType = LE_MOVE_SCALE_FADE;
 		le->startTime = cg.time;
-		le->endTime = cg.time + 1000 + random() * 250;
+		//***************DEEPWATER*************** //make bubbles last longer
+		le->endTime = cg.time + 3000 + random() * 250;
+		//le->endTime = cg.time + 1000 + random() * 250;
+		//***************************************//
 		le->lifeRate = 1.0 / ( le->endTime - le->startTime );
 
 		re = &le->refEntity;
