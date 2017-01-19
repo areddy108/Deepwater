@@ -1528,7 +1528,7 @@ static void CG_HasteTrail( centity_t *cent ) {
 	smoke->leType = LE_SCALE_FADE;
 }
 
-//********DEEPWATER*********** //create underwater blood "trail" (red smoke)
+//***************DEEPWATER*************** //create underwater blood "trail" (red smoke)
 static void CG_BloodTrail( centity_t *cent ) {
 	localEntity_t	*smoke;
 	vec3_t			origin;
@@ -1568,7 +1568,7 @@ static void CG_BloodTrail( centity_t *cent ) {
 	// use the optimized local entity add
 	smoke->leType = LE_SCALE_FADE;
 }
-
+//***************************************//
 
 #ifdef MISSIONPACK
 /*
@@ -1877,12 +1877,12 @@ CG_PlayerPowerups
 static void CG_PlayerPowerups( centity_t *cent, refEntity_t *torso ) {
 	int		powerups;
 	clientInfo_t	*ci;
-	//*******DEEPWATER********** //"bleed" if health is low enough
+	//***************DEEPWATER*************** //"bleed" if health is low enough
 	ci = &cgs.clientinfo[ cent->currentState.clientNum ];
 	if (ci->health < 50){
-		CG_BloodTrail( cent );
+		//CG_BloodTrail( c );
 	}
-	//**************************
+	//***************************************
 	powerups = cent->currentState.powerups;
 	if ( !powerups ) {
 		return;

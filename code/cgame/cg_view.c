@@ -525,21 +525,23 @@ static int CG_CalcFov( void ) {
 	fov_y = atan2( cg.refdef.height, x );
 	fov_y = fov_y * 360 / M_PI;
 
-	/*********DEEPWATER********* //force warp no matter what (always underwater)
+	/***************DEEPWATER*************** //force always warp
 	// warp if underwater
 	contents = CG_PointContents( cg.refdef.vieworg, -1 );
 	if ( contents & ( CONTENTS_WATER | CONTENTS_SLIME | CONTENTS_LAVA ) ){
+	/***************************************/
 		phase = cg.time / 1000.0 * WAVE_FREQUENCY * M_PI * 2;
 		v = WAVE_AMPLITUDE * sin( phase );
 		fov_x += v;
 		fov_y -= v;
 		inwater = qtrue;
+	/***************************************
 	}
 	else {
 		inwater = qfalse;
 	}
-	/***************************/
-	//********DEEPWATER********* //water view warping
+	/***************************************
+	/***************DEEPWATER***************/ //warp screen
 	phase = cg.time / 1000.0 * WAVE_FREQUENCY * M_PI * 2;
 	v = WAVE_AMPLITUDE * sin( phase );
 	fov_x += v;
@@ -557,6 +559,7 @@ static int CG_CalcFov( void ) {
 	}
 
 	return inwater;
+	/***************************************/
 }
 
 

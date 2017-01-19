@@ -113,8 +113,8 @@ void P_WorldEffects( gentity_t *ent ) {
 	//
 	// check for drowning (only if armor < 0)
 	//
-	if(ent->client->ps.stats[STAT_ARMOR] <= 0){
 	//if ( waterlevel == 3 ) { Replace with only checking armor level
+	if(ent->client->ps.stats[STAT_ARMOR] <= 0){
 		// envirosuit give air
 		if ( envirosuit ) {
 			ent->client->airOutTime = level.time + 10000;
@@ -464,11 +464,14 @@ void ClientTimerActions( gentity_t *ent, int msec ) {
 				ent->health--;
 			}
 		}
-
+		
+		/************DEEPWATER************ //reduce armor (oxygen) constantly
 		// count down armor when over max
 		if ( client->ps.stats[STAT_ARMOR] > client->ps.stats[STAT_MAX_HEALTH] ) {
 			client->ps.stats[STAT_ARMOR]--;
 		}
+		/*********************************/
+		client->ps.stats[STAT_ARMOR]--;
 	}
 /*****CLEANMOD****remove fields we don't need //original code
 #ifdef MISSIONPACK
