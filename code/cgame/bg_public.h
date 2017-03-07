@@ -165,7 +165,11 @@ typedef enum {
 	STAT_ARMOR,				
 	STAT_DEAD_YAW,					// look this direction when dead (FIXME: get rid of?)
 	STAT_CLIENTS_READY,				// bit mask of clients wishing to exit the intermission (FIXME: configstring?)
-	STAT_MAX_HEALTH					// health / armor limit, changable by handicap
+	STAT_MAX_HEALTH,				// health / armor limit, changable by handicap
+	//********DEEPWATER********		//class system value
+	STAT_CLASS						// class type
+	/*************************/
+
 } statIndex_t;
 
 
@@ -187,8 +191,7 @@ typedef enum
 	PERS_IMPRESSIVE_COUNT,
 	PERS_EXCELLENT_COUNT,
 	PERS_GAUNTLET_FRAG_COUNT,
-	PERS_ACCURACY_SHOTS,
-	PERS_ACCURACY_HITS
+	PERS_ACCURACY_SHOTS
 } 
 persEnum_t;
 

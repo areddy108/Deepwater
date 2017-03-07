@@ -148,110 +148,110 @@ extern vmCvar_t	ui_cdkeychecked;
 
 typedef struct _tag_menuframework
 {
-	int	cursor;
-	int cursor_prev;
+   int	cursor;
+   int cursor_prev;
 
-	int	nitems;
-	void *items[MAX_MENUITEMS];
+   int	nitems;
+   void *items[MAX_MENUITEMS];
 
-	void (*draw) (void);
-	sfxHandle_t (*key) (int key);
+   void (*draw) (void);
+   sfxHandle_t (*key) (int key);
 
-	qboolean	wrapAround;
-	qboolean	fullscreen;
-	qboolean	showlogo;
+   qboolean	wrapAround;
+   qboolean	fullscreen;
+   qboolean	showlogo;
 } menuframework_s;
 
 typedef struct
 {
-	int type;
-	const char *name;
-	int	id;
-	int x, y;
-	int left;
-	int	top;
-	int	right;
-	int	bottom;
-	menuframework_s *parent;
-	int menuPosition;
-	unsigned flags;
+   int type;
+   const char *name;
+   int	id;
+   int x, y;
+   int left;
+   int	top;
+   int	right;
+   int	bottom;
+   menuframework_s *parent;
+   int menuPosition;
+   unsigned flags;
 
-	void (*callback)( void *self, int event );
-	void (*statusbar)( void *self );
-	void (*ownerdraw)( void *self );
+   void (*callback)( void *self, int event );
+   void (*statusbar)( void *self );
+   void (*ownerdraw)( void *self );
 } menucommon_s;
 
 typedef struct {
-	int		cursor;
-	int		scroll;
-	int		widthInChars;
-	char	buffer[MAX_EDIT_LINE];
-	int		maxchars;
+   int		cursor;
+   int		scroll;
+   int		widthInChars;
+   char	buffer[MAX_EDIT_LINE];
+   int		maxchars;
 } mfield_t;
 
 typedef struct
 {
-	menucommon_s	generic;
-	mfield_t		field;
+   menucommon_s	generic;
+   mfield_t		field;
 } menufield_s;
 
 typedef struct 
 {
-	menucommon_s generic;
+   menucommon_s generic;
 
-	float minvalue;
-	float maxvalue;
-	float curvalue;
+   float minvalue;
+   float maxvalue;
+   float curvalue;
 
-	float range;
+   float range;
 } menuslider_s;
 
 typedef struct
 {
-	menucommon_s generic;
+   menucommon_s generic;
 
-	int	oldvalue;
-	int curvalue;
-	int	numitems;
-	int	top;
+   int	oldvalue;
+   int curvalue;
+   int	numitems;
+   int	top;
 		
-	const char **itemnames;
+   const char **itemnames;
 
-	int width;
-	int height;
-	int	columns;
-	int	seperation;
+   int width;
+   int height;
+   int	columns;
+   int	seperation;
 } menulist_s;
 
 typedef struct
 {
-	menucommon_s generic;
+   menucommon_s generic;
 } menuaction_s;
 
 typedef struct
 {
-	menucommon_s generic;
-	int curvalue;
+   menucommon_s generic;
+   int curvalue;
 } menuradiobutton_s;
 
 typedef struct
 {
-	menucommon_s	generic;
-	char*			focuspic;	
-	char*			errorpic;
-	qhandle_t		shader;
-	qhandle_t		focusshader;
-	int				width;
-	int				height;
-	float*			focuscolor;
+   menucommon_s	generic;
+   char*			focuspic;	
+   char*			errorpic;
+   qhandle_t		shader;
+   qhandle_t		focusshader;
+   int				width;
+   int				height;
+   float*			focuscolor;
 } menubitmap_s;
 
 typedef struct
 {
-	menucommon_s	generic;
-	char*			string;
-	int				style;
-	float*			color;
+   menucommon_s	generic;
+   char*			string;
+   int				style;
+   float*			color;
 } menutext_s;
 
 extern void			Menu_Cache( void );
@@ -452,71 +452,71 @@ extern void DriverInfo_Cache( void );
 
 //FIXME ripped from cg_local.h
 typedef struct {
-	int			oldFrame;
-	int			oldFrameTime;		// time when ->oldFrame was exactly on
+   int			oldFrame;
+   int			oldFrameTime;		// time when ->oldFrame was exactly on
 
-	int			frame;
-	int			frameTime;			// time when ->frame will be exactly on
+   int			frame;
+   int			frameTime;			// time when ->frame will be exactly on
 
-	float		backlerp;
+   float		backlerp;
 
-	float		yawAngle;
-	qboolean	yawing;
-	float		pitchAngle;
-	qboolean	pitching;
+   float		yawAngle;
+   qboolean	yawing;
+   float		pitchAngle;
+   qboolean	pitching;
 
-	int			animationNumber;	// may include ANIM_TOGGLEBIT
-	animation_t	*animation;
-	int			animationTime;		// time when the first frame of the animation will be exact
+   int			animationNumber;	// may include ANIM_TOGGLEBIT
+   animation_t	*animation;
+   int			animationTime;		// time when the first frame of the animation will be exact
 } lerpFrame_t;
 
 typedef struct {
 	// model info
-	qhandle_t		legsModel;
-	qhandle_t		legsSkin;
-	lerpFrame_t		legs;
+   qhandle_t		legsModel;
+   qhandle_t		legsSkin;
+   lerpFrame_t		legs;
 
-	qhandle_t		torsoModel;
-	qhandle_t		torsoSkin;
-	lerpFrame_t		torso;
+   qhandle_t		torsoModel;
+   qhandle_t		torsoSkin;
+   lerpFrame_t		torso;
 
-	qhandle_t		headModel;
-	qhandle_t		headSkin;
+   qhandle_t		headModel;
+   qhandle_t		headSkin;
 
-	animation_t		animations[MAX_ANIMATIONS];
+   animation_t		animations[MAX_ANIMATIONS];
 
-	qhandle_t		weaponModel;
-	qhandle_t		barrelModel;
-	qhandle_t		flashModel;
-	vec3_t			flashDlightColor;
-	int				muzzleFlashTime;
+   qhandle_t		weaponModel;
+   qhandle_t		barrelModel;
+   qhandle_t		flashModel;
+   vec3_t			flashDlightColor;
+   int				muzzleFlashTime;
 
 	// currently in use drawing parms
-	vec3_t			viewAngles;
-	vec3_t			moveAngles;
-	weapon_t		currentWeapon;
-	int				legsAnim;
-	int				torsoAnim;
+   vec3_t			viewAngles;
+   vec3_t			moveAngles;
+   weapon_t		currentWeapon;
+   int				legsAnim;
+   int				torsoAnim;
 
 	// animation vars
-	weapon_t		weapon;
-	weapon_t		lastWeapon;
-	weapon_t		pendingWeapon;
-	int				weaponTimer;
-	int				pendingLegsAnim;
-	int				torsoAnimationTimer;
+   weapon_t		weapon;
+   weapon_t		lastWeapon;
+   weapon_t		pendingWeapon;
+   int				weaponTimer;
+   int				pendingLegsAnim;
+   int				torsoAnimationTimer;
 
-	int				pendingTorsoAnim;
-	int				legsAnimationTimer;
+   int				pendingTorsoAnim;
+   int				legsAnimationTimer;
 
-	qboolean		chat;
-	qboolean		newModel;
+   qboolean		chat;
+   qboolean		newModel;
 
-	qboolean		barrelSpinning;
-	float			barrelAngle;
-	int				barrelTime;
+   qboolean		barrelSpinning;
+   float			barrelAngle;
+   int				barrelTime;
 
-	int				realWeapon;
+   int				realWeapon;
 } playerInfo_t;
 
 void UI_DrawPlayer( float x, float y, float w, float h, playerInfo_t *pi, int time );
@@ -528,29 +528,29 @@ qboolean UI_RegisterClientModelname( playerInfo_t *pi, const char *modelSkinName
 // ui_atoms.c
 //
 typedef struct {
-	int					frametime;
-	int					realtime;
-	int					cursorx;
-	int					cursory;
-	int					menusp;
-	menuframework_s*	activemenu;
-	menuframework_s*	stack[MAX_MENUDEPTH];
-	glconfig_t			glconfig;
-	qboolean			debug;
-	qhandle_t			whiteShader;
-	qhandle_t			menuBackShader;
-	qhandle_t			menuBackNoLogoShader;
-	qhandle_t			charset;
-	qhandle_t			charsetProp;
-	qhandle_t			charsetPropGlow;
-	qhandle_t			charsetPropB;
-	qhandle_t			cursor;
-	qhandle_t			rb_on;
-	qhandle_t			rb_off;
-	float				scale;
-	float				bias;
-	qboolean			demoversion;
-	qboolean			firstdraw;
+   int					frametime;
+   int					realtime;
+   int					cursorx;
+   int					cursory;
+   int					menusp;
+   menuframework_s*	activemenu;
+   menuframework_s*	stack[MAX_MENUDEPTH];
+   glconfig_t			glconfig;
+   qboolean			debug;
+   qhandle_t			whiteShader;
+   qhandle_t			menuBackShader;
+   qhandle_t			menuBackNoLogoShader;
+   qhandle_t			charset;
+   qhandle_t			charsetProp;
+   qhandle_t			charsetPropGlow;
+   qhandle_t			charsetPropB;
+   qhandle_t			cursor;
+   qhandle_t			rb_on;
+   qhandle_t			rb_off;
+   float				scale;
+   float				bias;
+   qboolean			demoversion;
+   qboolean			firstdraw;
 } uiStatic_t;
 
 extern void			UI_Init( void );

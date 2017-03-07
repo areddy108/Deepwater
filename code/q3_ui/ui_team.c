@@ -69,13 +69,21 @@ static void TeamMain_MenuEvent( void* ptr, int event ) {
 
 	switch( ((menucommon_s*)ptr)->id ) {
 	case ID_JOINRED:
+		/********DEEPWATER******** //launch class selection menu
 		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team red\n" );
 		UI_ForceMenuOff();
+		*/
+		UI_LaunchClassMenu();
+		/*************************/
 		break;
 
 	case ID_JOINBLUE:
+		/********DEEPWATER******** //launch class selection menu
 		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team blue\n" );
 		UI_ForceMenuOff();
+		*/
+		UI_LaunchClassMenu();
+		/*************************/
 		break;
 
 	case ID_JOINGAME:

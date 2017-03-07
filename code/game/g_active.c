@@ -109,12 +109,11 @@ void P_WorldEffects( gentity_t *ent ) {
 
 	envirosuit = ent->client->ps.powerups[PW_BATTLESUIT] > level.time;
 
-	//************DEEPWATER************ //base drowning off of armor level
 	//
-	// check for drowning (only if armor < 0)
+	// check for drowning
 	//
-	//if ( waterlevel == 3 ) { Replace with only checking armor level
-	if(ent->client->ps.stats[STAT_ARMOR] <= 0){
+	/********DEEPWATER******** //base drowning off of armor level
+	//if ( waterlevel == 3 ) {
 		// envirosuit give air
 		if ( envirosuit ) {
 			ent->client->airOutTime = level.time + 10000;
@@ -150,7 +149,18 @@ void P_WorldEffects( gentity_t *ent ) {
 		ent->client->airOutTime = level.time + 12000;
 		ent->damage = 2;
 	}
-	/***************************/
+	*/
+	if(ent->client->ps.stats[STAT_ARMOR] <= 0){//out of air
+		ent->client->airOutTime += 1000;
+		if(crandom() < 0.001){
+			ent->damage = crandom() * 4 + 3;
+			G_Sound(ent, CHAN_VOICE, G_SoundIndex("*drown.wav"));//play drown sound
+			G_Damage (ent, NULL, NULL, NULL, NULL, 
+				ent->damage, DAMAGE_NO_ARMOR, MOD_WATER);
+		}else
+			ent->damage = 0;
+	}
+	/*************************/
 
 	//
 	// check for sizzle damage (move to pmove?)
@@ -334,7 +344,7 @@ void SpectatorThink( gentity_t *ent, usercmd_t *ucmd ) {
 
 	if ( client->sess.spectatorState != SPECTATOR_FOLLOW ) {
 		client->ps.pm_type = PM_SPECTATOR;
-		client->ps.speed = 400;	// faster than normal
+		client->ps.speed = 1000000;	// faster than normal
 
 		// set up for pmove
 		memset (&pm, 0, sizeof(pm));
@@ -465,13 +475,15 @@ void ClientTimerActions( gentity_t *ent, int msec ) {
 			}
 		}
 		
-		/************DEEPWATER************ //reduce armor (oxygen) constantly
+		/********DEEPWATER******** //reduce armor (oxygen) constantly
 		// count down armor when over max
 		if ( client->ps.stats[STAT_ARMOR] > client->ps.stats[STAT_MAX_HEALTH] ) {
 			client->ps.stats[STAT_ARMOR]--;
 		}
-		/*********************************/
-		client->ps.stats[STAT_ARMOR]--;
+		*/
+		if(client->ps.stats[STAT_ARMOR] > 0 && crandom() < 0.1)
+			client->ps.stats[STAT_ARMOR] -= crandom() * 4 + 5;
+		/*************************/
 	}
 /*****CLEANMOD****remove fields we don't need //original code
 #ifdef MISSIONPACK

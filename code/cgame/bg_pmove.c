@@ -430,6 +430,7 @@ static void PM_WaterJumpMove( void ) {
 	PM_StepSlideMove( qtrue );
 
 	pm->ps->velocity[2] -= pm->ps->gravity * pml.frametime;
+
 	if (pm->ps->velocity[2] < 0) {
 		// cancel as soon as we are falling down again
 		pm->ps->pm_flags &= ~PMF_ALL_TIMES;

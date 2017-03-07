@@ -1,0 +1,19 @@
+Class System:
+	- Fragman
+		- Rifle
+		- Knife
+		- Minigrenade
+	- Medic
+		- Medic bag
+		- Pistol
+	- Sonarman
+		- Sonar buoys
+		- Speargun
+	- Demoman
+		- Proximity moncussion mines
+		- Satchel charge (C4)
+		- Diffuser
+		- Bangstick
+	- Heavy/Submariner
+		- Submarine (missiles)
+		- Netgun

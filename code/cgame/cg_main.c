@@ -951,15 +951,15 @@ static void CG_RegisterGraphics( void ) {
 	cgs.media.dustPuffShader = trap_R_RegisterShader("hasteSmokePuff" );
 #endif
 	
-	//***************DEEPWATER*************** //cache in status bar texture for use in underwater tint
+	//********DEEPWATER******** //cache in status bar texture for use in underwater tint
 	cgs.media.teamStatusBar = trap_R_RegisterShader( "gfx/2d/colorbar.tga" );
-	//***************************************
+	//*************************
 	if ( cgs.gametype >= GT_TEAM || cg_buildScript.integer ) {
 		cgs.media.friendShader = trap_R_RegisterShader( "sprites/foe" );
 		cgs.media.redQuadShader = trap_R_RegisterShader("powerups/blueflag" );
-		//***************DEEPWATER*************** //do not cache in status bar again (already cached previously)
+		//********DEEPWATER******** //do not cache in status bar again (already cached previously)
 		//cgs.media.teamStatusBar = trap_R_RegisterShader( "gfx/2d/colorbar.tga" );
-		//***************************************
+		//*************************
 #ifdef MISSIONPACK
 		cgs.media.blueKamikazeShader = trap_R_RegisterShader( "models/weaphits/kamikblu" );
 #endif

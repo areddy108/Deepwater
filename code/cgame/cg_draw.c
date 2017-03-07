@@ -500,7 +500,7 @@ CG_DrawTeamBackground
 */
 void CG_DrawTeamBackground( int x, int y, int w, int h, float alpha, int team )
 {
-	/***************DEEPWATER*************** //draw blue tint over screen all the time
+	/********DEEPWATER******** //draw blue tint over screen all the time
 	vec4_t		hcolor;
 
 	hcolor[3] = alpha;
@@ -518,7 +518,7 @@ void CG_DrawTeamBackground( int x, int y, int w, int h, float alpha, int team )
 	trap_R_SetColor( hcolor );
 	CG_DrawPic( x, y, w, h, cgs.media.teamStatusBar );
 	trap_R_SetColor( NULL );
-	/***************************************/
+	/*************************/
 	//Force color to blue
 	vec4_t		hcolor;
 	hcolor[0] = 0;		//Red tint

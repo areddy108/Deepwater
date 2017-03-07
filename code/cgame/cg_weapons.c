@@ -360,18 +360,18 @@ static void CG_RocketTrail( centity_t *ent, const weaponInfo_t *wi ) {
 
 	ent->trailTime = cg.time;
 
-	/***************DEEPWATER*************** //create bubble trail no matter what
+	/********DEEPWATER******** //create bubble trail no matter what
 	if ( contents & ( CONTENTS_WATER | CONTENTS_SLIME | CONTENTS_LAVA ) ) {
 		if ( contents & lastContents & CONTENTS_WATER ) {
 			CG_BubbleTrail( lastPos, origin, 8 );
-	/***************************************/
+	/*************************/
 	CG_BubbleTrail( lastPos, origin, 15 );
 	return;
-	/***************************************
+	/*************************
 		}
 		return;
 	}
-	/***************************************/
+	/*************************/
 
 	for ( ; t <= ent->trailTime ; t += step ) {
 		BG_EvaluateTrajectory( &es->pos, t, lastPos );
@@ -433,17 +433,17 @@ static void CG_NailTrail( centity_t *ent, const weaponInfo_t *wi ) {
 	lastContents = CG_PointContents( lastPos, -1 );
 
 	ent->trailTime = cg.time;
-	/***************DEEPWATER*************** //create bubble trail no matter what
+	/********DEEPWATER******** //create bubble trail no matter what
 	if ( contents & ( CONTENTS_WATER | CONTENTS_SLIME | CONTENTS_LAVA ) ) {
 		if ( contents & lastContents & CONTENTS_WATER ) {
-	/***************************************/
+	/*************************/
 	CG_BubbleTrail( lastPos, origin, 8 );
 	return;
-	/***************************************
+	/*************************
 		}
 		return;
 	}
-	/***************************************/
+	/*************************/
 
 	for ( ; t <= ent->trailTime ; t += step ) {
 		BG_EvaluateTrajectory( &es->pos, t, lastPos );
@@ -2100,12 +2100,12 @@ void CG_ShotgunFire( entityState_t *es ) {
 		//vec3_t			up; //DEEPWATER - not needed
 
 		contents = trap_CM_PointContents( es->pos.trBase, 0 );
-		/***************DEEPWATER*************** //get rid of smoke (always underwater)
+		/********DEEPWATER******** //get rid of smoke (always underwater)
 		if ( !( contents & CONTENTS_WATER ) ) {
 			VectorSet( up, 0, 0, 8 );
 			CG_SmokePuff( v, up, 32, 1, 1, 1, 0.33f, 900, cg.time, 0, LEF_PUFF_DONT_SCALE, cgs.media.shotgunSmokePuffShader );
 		}
-		/***************************************/
+		/*************************/
 	}
 	CG_ShotgunPattern( es->pos.trBase, es->origin2, es->eventParm, es->otherEntityNum );
 }
@@ -2249,6 +2249,7 @@ void CG_Bullet( vec3_t end, int sourceEntityNum, vec3_t normal, qboolean flesh, 
 	//trace_t trace;
 	int sourceContentType, destContentType;
 	vec3_t		start;
+	vec3_t		above;	//used to make vertical bubble trail
 
 	// if the shooter is currently valid, calc a source point and possibly
 	// do trail effects
@@ -2257,12 +2258,16 @@ void CG_Bullet( vec3_t end, int sourceEntityNum, vec3_t normal, qboolean flesh, 
 			sourceContentType = trap_CM_PointContents( start, 0 );
 			destContentType = trap_CM_PointContents( end, 0 );
 
-			/***************DEEPWATER*************** //always make full bubble trail
+			/********DEEPWATER******** //always make full bubble trail
 			// do a complete bubble trail if necessary
 			if ( ( sourceContentType == destContentType ) && ( sourceContentType & CONTENTS_WATER ) ) {
-			/***************************************/
-				CG_BubbleTrail( start, end, 32 );
-			/***************************************
+			/*************************/
+			CG_BubbleTrail( start, end, 32 );
+			// create bubble trail going up out of gun
+			VectorCopy(start, above);
+			above[2] += 128;//make bubbles go higher
+			CG_BubbleTrail( start, above, 32 );
+			/*************************
 			}
 			// bubble trail from water into air
 			else if ( ( sourceContentType & CONTENTS_WATER ) ) {
@@ -2279,15 +2284,18 @@ void CG_Bullet( vec3_t end, int sourceEntityNum, vec3_t normal, qboolean flesh, 
 			if ( random() < cg_tracerChance.value ) {
 				CG_Tracer( start, end );
 			}
-			/***************************************/
+			/*************************/
 		}
 	}
 
 	// impact splash and mark
 	if ( flesh ) {
 		CG_Bleed( end, fleshEntityNum );
-	} else {
+	}
+	/********DEEPWATER******** //no impact sound in water
+	else {
 		CG_MissileHitWall( WP_MACHINEGUN, 0, end, normal, IMPACTSOUND_DEFAULT );
 	}
+	/************************/
 
 }

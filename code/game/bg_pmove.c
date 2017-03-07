@@ -33,7 +33,10 @@ pml_t		pml;
 // movement parameters
 float	pm_stopspeed = 100.0f;
 float	pm_duckScale = 0.25f;
-float	pm_swimScale = 0.50f;
+//********DEEPWATER******** //increased friction underwater
+//float	pm_swimScale = 0.50f;
+float	pm_swimScale = 0.20f;
+//*************************//
 float	pm_wadeScale = 0.70f;
 
 float	pm_accelerate = 10.0f;
@@ -189,7 +192,7 @@ static void PM_Friction( void ) {
 		// FIXME: still have z friction underwater?
 		return;
 	}
-
+	
 	drop = 0;
 
 	// apply ground friction
@@ -222,8 +225,9 @@ static void PM_Friction( void ) {
 	if (newspeed < 0) {
 		newspeed = 0;
 	}
-	newspeed /= speed;
 
+	newspeed /= speed;
+	
 	vel[0] = vel[0] * newspeed;
 	vel[1] = vel[1] * newspeed;
 	vel[2] = vel[2] * newspeed;
@@ -453,7 +457,6 @@ static void PM_WaterJumpMove( void ) {
 	// waterjump has no control, but falls
 
 	PM_StepSlideMove( qtrue );
-
 	pm->ps->velocity[2] -= pm->ps->gravity * pml.frametime;
 	if (pm->ps->velocity[2] < 0) {
 		// cancel as soon as we are falling down again
@@ -503,7 +506,10 @@ static void PM_WaterMove( void ) {
 	if ( !scale ) {
 		wishvel[0] = 0;
 		wishvel[1] = 0;
-		wishvel[2] = -60;		// sink towards bottom
+		/********DEEPWATER********/ //don't sink (too much) in water
+		//wishvel[2] = -60;		// sink towards bottom
+		wishvel[2] = -5;		// sink a tad bit
+		/*************************/
 	} else {
 		for (i=0 ; i<3 ; i++)
 			wishvel[i] = scale * pml.forward[i]*pm->cmd.forwardmove + scale * pml.right[i]*pm->cmd.rightmove;
@@ -1203,7 +1209,7 @@ PM_SetWaterLevel	FIXME: avoid this twice?  certainly if not moving
 =============
 */
 static void PM_SetWaterLevel( void ) {
-	/************DEEPWATER************ //make everything think they are underwater
+	/********DEEPWATER******** //make everything underwater
 	vec3_t		point;
 	int			cont;
 	int			sample1;
@@ -1237,7 +1243,7 @@ static void PM_SetWaterLevel( void ) {
 			}
 		}
 	}
-	//*********************************/
+	//************************/
 	pm->waterlevel = 3;
 }
 
