@@ -482,7 +482,7 @@ void ClientTimerActions( gentity_t *ent, int msec ) {
 		}
 		*/
 		if(client->ps.stats[STAT_ARMOR] > 0 && crandom() < 0.1)
-			client->ps.stats[STAT_ARMOR] -= crandom() * 4 + 5;
+			client->ps.stats[STAT_ARMOR] -= (crandom() + 0.5) * 2;
 		/*************************/
 	}
 /*****CLEANMOD****remove fields we don't need //original code

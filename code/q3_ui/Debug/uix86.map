@@ -1,6 +1,6 @@
  uix86
 
- Timestamp is 58bec577 (Tue Mar 07 09:36:39 2017)
+ Timestamp is 58cbe405 (Fri Mar 17 09:26:29 2017)
 
  Preferred load address is 40000000
 
@@ -181,7 +181,7 @@
  0001:0000b930       _UI_CinematicsMenu_f       4000c930 f   ui_cinematics.obj
  0001:0000b9b0       _Deepwater_InitializeMenu  4000c9b0 f   ui_classmenu.obj
  0001:0000be50       _DeepwaterMenu_Cache       4000ce50 f   ui_classmenu.obj
- 0001:0000bea0       _UI_LaunchClassMenu        4000cea0 f   ui_classmenu.obj
+ 0001:0000bea0       _UI_DeepwaterMenu          4000cea0 f   ui_classmenu.obj
  0001:0000bef0       _ConfirmMenu_Cache         4000cef0 f   ui_confirm.obj
  0001:0000bf40       _UI_ConfirmMenu_Style      4000cf40 f   ui_confirm.obj
  0001:0000c4c0       _UI_ConfirmMenu            4000d4c0 f   ui_confirm.obj
@@ -436,8 +436,8 @@
  0001:00037820       __toupper                  40038820 f   LIBCMTD:toupper.obj
  0001:00037830       _toupper                   40038830 f   LIBCMTD:toupper.obj
  0001:000378d0       __toupper_lk               400388d0 f   LIBCMTD:toupper.obj
- 0001:00037a00       __chkstk                   40038a00 f   LIBCMTD:chkstk.obj
  0001:00037a00       __alloca_probe             40038a00 f   LIBCMTD:chkstk.obj
+ 0001:00037a00       __chkstk                   40038a00 f   LIBCMTD:chkstk.obj
  0001:00037a30       _strcpy                    40038a30 f   LIBCMTD:strcat.obj
  0001:00037a40       _strcat                    40038a40 f   LIBCMTD:strcat.obj
  0001:00037b30       _strchr                    40038b30 f   LIBCMTD:strchr.obj

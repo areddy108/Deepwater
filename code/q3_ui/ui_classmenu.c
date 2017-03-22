@@ -46,6 +46,7 @@ static void Deepwater_MenuEvent (void* ptr, int event){
 
    switch(((menucommon_s*)ptr)->id){
       case ID_FRAGMAN:
+
 		  trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team fragman\n" );
          UI_ForceMenuOff();
          break;
@@ -161,7 +162,7 @@ void DeepwaterMenu_Cache(void){
 	trap_R_RegisterShaderNoMip(MENU_FRAME);
 }
 
-void UI_LaunchClassMenu(void){
+void UI_DeepwaterMenu(void){
 	Deepwater_InitializeMenu();
 	UI_PushMenu(&menu.menuFramework);
 }

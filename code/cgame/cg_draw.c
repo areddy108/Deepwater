@@ -524,7 +524,7 @@ void CG_DrawTeamBackground( int x, int y, int w, int h, float alpha, int team )
 	hcolor[0] = 0;		//Red tint
 	hcolor[1] = 0.3f;	//Green
 	hcolor[2] = 1;		//Blue
-	hcolor[3] = 0.7f;	//Alpha (opacity)
+	hcolor[3] = 0.6f;	//Alpha (opacity)
 	trap_R_SetColor( hcolor );
 	//Fill screen with tint
 	CG_DrawPic( 0, 0, 640, 480, cgs.media.teamStatusBar );

@@ -1,19 +1,16 @@
-Class System:
+Class System:					Stock weapon:
 	- Fragman
-		- Rifle
-		- Knife
-		- Minigrenade
-	- Medic
-		- Medic bag
-		- Pistol
-	- Sonarman
-		- Sonar buoys
-		- Speargun
-	- Demoman
-		- Proximity moncussion mines
-		- Satchel charge (C4)
-		- Diffuser
-		- Bangstick
-	- Heavy/Submariner
-		- Submarine (missiles)
-		- Netgun
+		- Rifle				- WP_BFG
+		- Grapple gun			- WP_GRAPPLING_HOOK
+	- Corpsman
+		- Medic bag			- WP_GAUNTLET
+		- Pistol			- WP_MACHINEGUN
+	- Sonartech
+		- Sonar screen			- WP_RAILGUN
+		- Speargun			- WP_PLASMAGUN
+	- Mineman
+		- Proximity concussion mines	- WP_LIGHTNING
+		- Grenade launcher		- WP_GRENADE_LAUNCHER
+	- Gunner
+		- Torpedo launcher		- WP_ROCKET_LAUNCHER
+		- Netgun			- WP_SHOTGUN

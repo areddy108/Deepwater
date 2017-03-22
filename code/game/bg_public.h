@@ -239,7 +239,10 @@ typedef enum {
 	PERS_ASSIST_COUNT,				// assist awards
 	PERS_GAUNTLET_FRAG_COUNT,		// kills with the guantlet
 //*****---*************************************/
-	PERS_CAPTURES					// captures
+	PERS_CAPTURES,					// captures
+	//********DEEPWATER********		//class system value
+	PERS_CLASS						// class type
+	/*************************/
 } persEnum_t;
 
 
@@ -337,6 +340,17 @@ typedef enum {
 	WP_NUM_WEAPONS
 } weapon_t;
 
+//********DEEPWATER******** //player class values
+typedef enum{
+	PC_FRAGMAN,
+	PC_CORPSMAN,
+	PC_SONARTECH,
+	PC_MINEMAN,
+	PC_GUNNER,
+
+	PC_NUM_CLASSES
+}playerClass_t;
+//*************************/
 
 // reward sounds (stored in ps->persistant[PERS_PLAYEREVENTS])
 #define	PLAYEREVENT_DENIEDREWARD		0x0001

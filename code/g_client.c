@@ -775,9 +775,9 @@ if desired.
       else {
          team = client->sess.sessionTeam;
       }
-	  
-   // set model
-   /*************************************************************************/
+
+   // set model THE FOLLOWING IS PROBABLY POORLY COMMENTED AVM
+   /*************************************************************************
       if( g_gametype.integer >= GT_TEAM || g_gametype.integer >= GT_CTF) 
       {
       //MOD FORCE SKIN BASED ON TEAM

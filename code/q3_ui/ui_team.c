@@ -73,7 +73,7 @@ static void TeamMain_MenuEvent( void* ptr, int event ) {
 		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team red\n" );
 		UI_ForceMenuOff();
 		*/
-		UI_LaunchClassMenu();
+		UI_DeepwaterMenu();
 		/*************************/
 		break;
 
@@ -82,7 +82,7 @@ static void TeamMain_MenuEvent( void* ptr, int event ) {
 		trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team blue\n" );
 		UI_ForceMenuOff();
 		*/
-		UI_LaunchClassMenu();
+		UI_DeepwaterMenu();
 		/*************************/
 		break;
 

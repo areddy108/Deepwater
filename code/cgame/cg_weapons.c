@@ -823,7 +823,10 @@ void CG_RegisterWeapon( int weaponNum ) {
 		MAKERGB( weaponInfo->flashDlightColor, 1, 0.7f, 1 );
 		weaponInfo->flashSound[0] = trap_S_RegisterSound( "sound/weapons/bfg/bfg_fire.wav", qfalse );
 		cgs.media.bfgExplosionShader = trap_R_RegisterShader( "bfgExplosion" );
-		weaponInfo->missileModel = trap_R_RegisterModel( "models/weaphits/bfg.md3" );
+		//********DEEPWATER********
+		//weaponInfo->missileModel = trap_R_RegisterModel( "models/weaphits/bfg.md3" );
+		weaponInfo->missileModel = trap_R_RegisterModel( "models/ammo/bfg/rocket.md3" );
+		//*************************
 		weaponInfo->missileSound = trap_S_RegisterSound( "sound/weapons/rocket/rockfly.wav", qfalse );
 		break;
 
@@ -2007,6 +2010,7 @@ CG_ShotgunPellet
 */
 static void CG_ShotgunPellet( vec3_t start, vec3_t end, int skipNum ) {
 	trace_t		tr;
+	trace_t trace; //DEEPWATER - used for bubble trail
 	int sourceContentType, destContentType;
 
 	CG_Trace( &tr, start, NULL, NULL, end, skipNum, MASK_SHOT );
@@ -2014,6 +2018,7 @@ static void CG_ShotgunPellet( vec3_t start, vec3_t end, int skipNum ) {
 	sourceContentType = trap_CM_PointContents( start, 0 );
 	destContentType = trap_CM_PointContents( tr.endpos, 0 );
 
+	/********DEEPWATER******** //force pellet bubble trail
 	// FIXME: should probably move this cruft into CG_BubbleTrail
 	if ( sourceContentType == destContentType ) {
 		if ( sourceContentType & CONTENTS_WATER ) {
@@ -2030,6 +2035,11 @@ static void CG_ShotgunPellet( vec3_t start, vec3_t end, int skipNum ) {
 		trap_CM_BoxTrace( &trace, start, end, NULL, NULL, 0, CONTENTS_WATER );
 		CG_BubbleTrail( tr.endpos, trace.endpos, 32 );
 	}
+	*/
+	trap_CM_BoxTrace( &trace, end, start, NULL, NULL, 0, CONTENTS_WATER );
+	CG_BubbleTrail( tr.endpos, trace.endpos, 32 );
+	/*************************/
+
 
 	if (  tr.surfaceFlags & SURF_NOIMPACT ) {
 		return;
@@ -2097,14 +2107,18 @@ void CG_ShotgunFire( entityState_t *es ) {
 	VectorAdd( es->pos.trBase, v, v );
 	if ( cgs.glconfig.hardwareType != GLHW_RAGEPRO ) {
 		// ragepro can't alpha fade, so don't even bother with smoke
-		//vec3_t			up; //DEEPWATER - not needed
+		vec3_t			up;
 
 		contents = trap_CM_PointContents( es->pos.trBase, 0 );
-		/********DEEPWATER******** //get rid of smoke (always underwater)
+		/********DEEPWATER******** //make bubbles, not smoke
 		if ( !( contents & CONTENTS_WATER ) ) {
 			VectorSet( up, 0, 0, 8 );
 			CG_SmokePuff( v, up, 32, 1, 1, 1, 0.33f, 900, cg.time, 0, LEF_PUFF_DONT_SCALE, cgs.media.shotgunSmokePuffShader );
 		}
+		*/
+		VectorCopy(v, up);
+		up[2] += 128;
+		CG_BubbleTrail( v, up, 32 ); //bubbles going up
 		/*************************/
 	}
 	CG_ShotgunPattern( es->pos.trBase, es->origin2, es->eventParm, es->otherEntityNum );

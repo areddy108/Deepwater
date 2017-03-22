@@ -626,7 +626,10 @@ gentity_t *fire_bfg (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	VectorScale( dir, 2000, bolt->s.pos.trDelta );
+	//********DEEPWATER******** //slow down bullet
+	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
+	VectorScale( dir, 90, bolt->s.pos.trDelta );
+	//*************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, bolt->r.currentOrigin);
 
@@ -664,12 +667,15 @@ gentity_t *fire_rocket (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->target_ent = NULL;
 
 	bolt->s.pos.trType = TR_LINEAR;
-	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
+	//********DEEPWATER******** //don't prestep missile
+	//bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
+	bolt->s.pos.trTime = level.time;
+	/*************************/
 	VectorCopy( start, bolt->s.pos.trBase );
+	//********DEEPWATER******** //slow down rocket (torpedo)
 	//VectorScale( dir, 900, bolt->s.pos.trDelta );
-//******************************************************************
-	VectorScale( dir, 900, bolt->s.pos.trDelta );
-//******************************************************************
+	VectorScale( dir, 100, bolt->s.pos.trDelta );
+	//************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, bolt->r.currentOrigin);
 

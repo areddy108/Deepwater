@@ -49,10 +49,7 @@ settings
 	phys_gravitydirection		{0, 0, -1}
 	phys_friction				6
 	phys_stopspeed				100
-	//***************DEEPWATER*************** //reduced gravity for floating around
-	//phys_gravity				800
-	phys_gravity				600
-	//***************************************//
+	phys_gravity				800
 	phys_waterfriction			1
 	phys_watergravity			400
 	phys_maxvelocity			320

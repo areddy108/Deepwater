@@ -165,10 +165,7 @@ typedef enum {
 	STAT_ARMOR,				
 	STAT_DEAD_YAW,					// look this direction when dead (FIXME: get rid of?)
 	STAT_CLIENTS_READY,				// bit mask of clients wishing to exit the intermission (FIXME: configstring?)
-	STAT_MAX_HEALTH,				// health / armor limit, changable by handicap
-	//********DEEPWATER********		//class system value
-	STAT_CLASS						// class type
-	/*************************/
+	STAT_MAX_HEALTH					// health / armor limit, changable by handicap
 
 } statIndex_t;
 
@@ -191,7 +188,10 @@ typedef enum
 	PERS_IMPRESSIVE_COUNT,
 	PERS_EXCELLENT_COUNT,
 	PERS_GAUNTLET_FRAG_COUNT,
-	PERS_ACCURACY_SHOTS
+	PERS_ACCURACY_SHOTS,
+	//********DEEPWATER********		//class system value
+	PERS_CLASS						// class type
+	//*************************/
 } 
 persEnum_t;
 
@@ -254,6 +254,18 @@ typedef enum {
 	WP_NUM_WEAPONS
 } weapon_t;
 
+//********DEEPWATER******** //player class values
+typedef enum{
+	PC_FRAGMAN,
+	PC_CORPSMAN,
+	PC_SONARTECH,
+	PC_MINEMAN,
+	PC_GUNNER,
+
+	PC_NUM_CLASSES
+  //PC_MASTER_RACE		<-- me irl
+}playerClass_t;
+/*************************/
 
 // reward sounds
 typedef enum {

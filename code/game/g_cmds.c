@@ -586,9 +586,41 @@ void SetTeam( gentity_t *ent, char *s ) {
 	// decide if we will allow the change
 	//
 	oldTeam = client->sess.sessionTeam;
+	/********DEEPWATER******** //allow team changes into same team for class changes
 	if ( team == oldTeam && team != TEAM_SPECTATOR ) {
 		return;
 	}
+	/*************************/
+
+	//********DEEPWATER******** //set player class and model based on menu selection
+	if(g_gametype.integer == GT_TEAM || g_gametype.integer == GT_CTF){
+		//set team
+		if(!Q_stricmp(s, "red") || !Q_stricmp(s, "r")){
+			//requestedTeam = TEAM_RED;
+		}else if(!Q_stricmp(s, "blue") || !Q_stricmp(s, "b")){
+			//requestedTeam = TEAM_BLUE;
+		}
+		//set player class
+		if(!Q_stricmp(s, "fragman")){
+			client->ps.persistant[PERS_CLASS] = PC_FRAGMAN;
+		}
+		else if(!Q_stricmp(s, "corpsman")){
+			client->ps.persistant[PERS_CLASS] = PC_CORPSMAN;
+		}
+		else if(!Q_stricmp(s, "mineman")){
+			client->ps.persistant[PERS_CLASS] = PC_MINEMAN;
+		}
+		else if(!Q_stricmp(s, "sonartech")){
+			client->ps.persistant[PERS_CLASS] = PC_SONARTECH;
+		}
+		else if(!Q_stricmp(s, "gunner")){
+			client->ps.persistant[PERS_CLASS] = PC_GUNNER;
+		}
+	}else{//non-team game mode
+		//everybody is fragman
+		client->ps.persistant[PERS_CLASS] = PC_MINEMAN;
+	}
+	//*************************/
 
 	//
 	// execute the team change
@@ -695,6 +727,9 @@ void Cmd_Team_f( gentity_t *ent ) {
 	}
 
 	trap_Argv( 1, s, sizeof( s ) );
+	
+	//G_Printf( "lol" );
+	//G_Printf( s );
 
 	SetTeam( ent, s );
 

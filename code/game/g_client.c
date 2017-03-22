@@ -998,6 +998,8 @@ void ClientBegin( int clientNum ) {
 	gentity_t	*tent;
 	int			flags;
 
+	int			playerClass; //DEEPWATER - preserve player class value
+
 	ent = g_entities + clientNum;
 
 	client = level.clients + clientNum;
@@ -1020,7 +1022,14 @@ void ClientBegin( int clientNum ) {
 	// so the viewpoint doesn't interpolate through the
 	// world to the new position
 	flags = client->ps.eFlags;
+	/********DEEPWATER******** //preserve player class value
 	memset( &client->ps, 0, sizeof( client->ps ) );
+	*/
+	playerClass = client->ps.persistant[PERS_CLASS];
+	memset( &client->ps, 0, sizeof( client->ps ) );
+	client->ps.persistant[PERS_CLASS] = playerClass;
+	/*************************/
+
 	client->ps.eFlags = flags;
 
 	// locate ent at a spawn point
@@ -1182,7 +1191,7 @@ void ClientSpawn(gentity_t *ent) {
 	client->ps.stats[STAT_ARMOR] = 100;
 	//*************************
 
-	/********DEEPWATER******** //give class weapons
+	/********DEEPWATER******** //give class-based weapons
 	client->ps.stats[STAT_WEAPONS] = ( 1 << WP_MACHINEGUN );
 	if ( g_gametype.integer == GT_TEAM ) {
 		client->ps.ammo[WP_MACHINEGUN] = 50;
@@ -1194,7 +1203,54 @@ void ClientSpawn(gentity_t *ent) {
 	client->ps.ammo[WP_GAUNTLET] = -1;
 	client->ps.ammo[WP_GRAPPLING_HOOK] = -1;
 	*/
-	
+
+	switch(client->ps.persistant[PERS_CLASS]){
+		
+		case(PC_FRAGMAN):
+			client->ps.stats[STAT_WEAPONS] = (1 << WP_BFG);					//rifle
+			client->ps.stats[STAT_WEAPONS] |= (1 << WP_GRAPPLING_HOOK);		//grapple launcher
+
+			client->ps.ammo[WP_BFG] = 100;
+			client->ps.ammo[WP_GRAPPLING_HOOK] = 100;
+
+			break;
+
+		case(PC_CORPSMAN):
+			client->ps.stats[STAT_WEAPONS] = (1 << WP_GAUNTLET);			//medic bag
+			client->ps.stats[STAT_WEAPONS] |= (1 << WP_MACHINEGUN);			//pistol
+			
+			client->ps.ammo[WP_GAUNTLET] = -1;
+			client->ps.ammo[WP_MACHINEGUN] = 100;
+
+			break;
+
+		case(PC_SONARTECH):
+			client->ps.stats[STAT_WEAPONS] = (1 << WP_RAILGUN);				//sonar screen
+			client->ps.stats[STAT_WEAPONS] |= (1 << WP_PLASMAGUN);			//harpoon launcher
+
+			client->ps.ammo[WP_RAILGUN] = 100;
+			client->ps.ammo[WP_PLASMAGUN] = 100;
+
+			break;
+
+		case(PC_MINEMAN):
+			client->ps.stats[STAT_WEAPONS] = (1 << WP_LIGHTNING);			//mine layer
+			client->ps.stats[STAT_WEAPONS] |= (1 << WP_GRENADE_LAUNCHER);	//grenade launcher
+			
+			client->ps.ammo[WP_LIGHTNING] = 100;
+			client->ps.ammo[WP_GRENADE_LAUNCHER] = 100;
+
+			break;
+
+		case(PC_GUNNER):
+			client->ps.stats[STAT_WEAPONS] = (1 << WP_ROCKET_LAUNCHER);		//torpedo launcher
+			client->ps.stats[STAT_WEAPONS] |= (1 << WP_SHOTGUN);			//net gun
+			
+			client->ps.ammo[WP_ROCKET_LAUNCHER] = 100;
+			client->ps.ammo[WP_SHOTGUN] = 100;
+
+			break;
+	}
 	/*************************/
 
 	// health will count down towards max_health

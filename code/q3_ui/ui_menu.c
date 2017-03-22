@@ -330,10 +330,7 @@ void UI_MainMenu( void ) {
    s_main.multiplayer.generic.id			= ID_MULTIPLAYER;
    s_main.multiplayer.generic.callback		= Main_MenuEvent; 
    s_main.multiplayer.string				= "MULTIPLAYER";
-	//********DEEPWATER********				//make all text blue
-   s_main.multiplayer.color				= color_blue;
-	//s_main.multiplayer.color				= color_red;
-	//*************************
+   s_main.multiplayer.color				= color_red;
    s_main.multiplayer.style				= style;
 
    y += MAIN_MENU_VERTICAL_SPACING;
