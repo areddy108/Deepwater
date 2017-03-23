@@ -1058,6 +1058,13 @@ void G_Damage( gentity_t *targ, gentity_t *inflictor, gentity_t *attacker,
 
 	// do the damage
 	if (take) {
+		//********DEEPWATER******** //healing pack functionality
+		if(mod == MOD_GAUNTLET ){
+			if(client->ps.stats[STAT_HEALTH] > 0)//dont' revive the dead. that makes zombies.
+				client->ps.stats[STAT_HEALTH] += crandom() * 2;
+			return;
+		}
+		/*************************/
 		targ->health = targ->health - take;
 		if ( targ->client ) {
 			targ->client->ps.stats[STAT_HEALTH] = targ->health;

@@ -1,16 +1,16 @@
-Class System:					Stock weapon:
-	- Fragman
-		- Rifle				- WP_BFG
-		- Grapple gun			- WP_GRAPPLING_HOOK
-	- Corpsman
-		- Medic bag			- WP_GAUNTLET
-		- Pistol			- WP_MACHINEGUN
-	- Sonartech
-		- Sonar screen			- WP_RAILGUN
-		- Speargun			- WP_PLASMAGUN
-	- Mineman
-		- Proximity concussion mines	- WP_LIGHTNING
-		- Grenade launcher		- WP_GRENADE_LAUNCHER
-	- Gunner
-		- Torpedo launcher		- WP_ROCKET_LAUNCHER
-		- Netgun			- WP_SHOTGUN
+Class System:				Stock weapon:		Functionality:
+- Fragman
+	- Rifle				- WP_BFG		- X
+	- Grapple gun			- WP_GRAPPLING_HOOK	- X
+- Corpsman
+	- Medic bag			- WP_GAUNTLET		- V
+	- Pistol			- WP_MACHINEGUN		- X
+- Sonartech
+	- Sonar screen			- WP_RAILGUN		- X
+	- Speargun			- WP_PLASMAGUN		- X
+- Mineman
+	- Proximity concussion mines	- WP_LIGHTNING		- X
+	- Grenade launcher		- WP_GRENADE_LAUNCHER	- X
+- Gunner
+	- Torpedo launcher		- WP_ROCKET_LAUNCHER	- V
+	- Netgun			- WP_SHOTGUN		- X
