@@ -162,7 +162,10 @@ static void Main_MenuDraw( void ) {
    vec3_t			angles;
    float			adjust;
    float			x, y, w, h;
-   vec4_t			color = {0.5, 0, 0, 1};
+   //********DEEPWATER******** //make text navy blue
+   //vec4_t			color = {0.5, 0, 0, 1};
+   vec4_t			color = {0, 0, 0.6f, 1};
+   /*************************/
 
 	// setup the refdef
 
@@ -311,7 +314,10 @@ void UI_MainMenu( void ) {
    s_main.menu.wrapAround = qtrue;
    s_main.menu.showlogo = qtrue;
 
-   y = 134;
+   //*******DEEPWATER******** //shift buttons down
+   //y = 134;
+   y = 180;
+   /************************/
    s_main.singleplayer.generic.type		= MTYPE_PTEXT;
    s_main.singleplayer.generic.flags		= QMF_CENTER_JUSTIFY|QMF_PULSEIFFOCUS;
    s_main.singleplayer.generic.x			= 320;
