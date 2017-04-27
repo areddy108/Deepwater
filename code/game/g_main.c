@@ -1688,6 +1688,11 @@ Runs thinking code for this frame if necessary
 void G_RunThink (gentity_t *ent) {
 	float	thinktime;
 
+	//********DEEPWATER******** //drag on bolts
+	VectorScale(ent->s.pos.trDelta, 0.93, ent->s.pos.trDelta);//drag on movement vector
+	VectorCopy( ent->r.currentOrigin, ent->s.pos.trBase );
+	//*************************/
+
 	thinktime = ent->nextthink;
 	if (thinktime <= 0) {
 		return;

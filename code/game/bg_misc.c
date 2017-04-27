@@ -259,7 +259,8 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/rocketl/rocketl.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_rocket",
-/* pickup */	"Rocket Launcher",
+//DEEPWATER
+/* pickup */	"Torpedo Launcher",
 		10,
 		IT_WEAPON,
 		WP_ROCKET_LAUNCHER,
@@ -1208,10 +1209,12 @@ void BG_EvaluateTrajectory( const trajectory_t *tr, int atTime, vec3_t result ) 
 		if ( atTime > tr->trTime + tr->trDuration ) {
 			atTime = tr->trTime + tr->trDuration;
 		}
-		deltaTime = ( atTime - tr->trTime ) * 0.001;	// milliseconds to seconds
+		deltaTime = ( atTime - tr->trTime) * 0.001;	// milliseconds to seconds
+
 		if ( deltaTime < 0 ) {
 			deltaTime = 0;
 		}
+	
 		VectorMA( tr->trBase, deltaTime, tr->trDelta, result );
 		break;
 	case TR_GRAVITY:

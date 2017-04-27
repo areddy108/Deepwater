@@ -583,7 +583,7 @@ extern void			UI_PushMenu ( menuframework_s *menu );
 extern void			UI_PopMenu (void);
 extern void			UI_ForceMenuOff (void);
 //********DEEPWATER******** //include class menu launch method(s)
-extern void			UI_DeepwaterMenu(void);
+extern void			UI_DeepwaterMenu(int teamFlag);
 /*************************/
 extern char			*UI_Argv( int arg );
 extern char			*UI_Cvar_VariableString( const char *var_name );

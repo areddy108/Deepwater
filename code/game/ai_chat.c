@@ -279,6 +279,7 @@ BotWeaponNameForMeansOfDeath
 */
 
 char *BotWeaponNameForMeansOfDeath(int mod) {
+/********DEEPWATER******** //change names of damage
 	switch(mod) {
 		case MOD_SHOTGUN: return "Shotgun";
 		case MOD_GAUNTLET: return "Gauntlet";
@@ -303,6 +304,24 @@ char *BotWeaponNameForMeansOfDeath(int mod) {
 		case MOD_GRAPPLE: return "Grapple";
 		default: return "[unknown weapon]";
 	}
+*/
+	switch(mod) {
+		case MOD_SHOTGUN:			return "Net gun";
+		case MOD_GAUNTLET:			return "Medical kit";
+		case MOD_MACHINEGUN:		return "Pistol";
+		case MOD_GRENADE:
+		case MOD_GRENADE_SPLASH:	return "Grenade Launcher";
+		case MOD_ROCKET:
+		case MOD_ROCKET_SPLASH:		return "Torpedo Launcher";
+		case MOD_PLASMA:
+		case MOD_PLASMA_SPLASH:		return "Speargun";
+		case MOD_RAILGUN:			return "Sonar buoy";
+		case MOD_LIGHTNING:			return "Proximity mine";
+		case MOD_BFG:				return "Rifle";
+		case MOD_GRAPPLE:			return "Grapple";
+		default:					return "[unknown weapon]";
+	}
+/*************************/
 }
 
 /*
@@ -318,6 +337,7 @@ char *BotRandomWeaponName(void) {
 #else
 	rnd = random() * 8.9;
 #endif
+/********DEEPWATER******** //change weapon names
 	switch(rnd) {
 		case 0: return "Gauntlet";
 		case 1: return "Shotgun";
@@ -334,6 +354,19 @@ char *BotRandomWeaponName(void) {
 #endif
 		default: return "BFG10K";
 	}
+*/
+	switch(rnd) {
+		case 0: return "Medical Kit";
+		case 1: return "Net gun";
+		case 2: return "Machinegun";
+		case 3: return "Grenade Launcher";
+		case 4: return "Torpedo Launcher";
+		case 5: return "Speargun";
+		case 6: return "Proximity Mine";
+		case 7: return "Sonar buoy";
+		default: return "Rifle";
+	}
+/*************************/
 }
 
 /*

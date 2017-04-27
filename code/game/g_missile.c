@@ -512,6 +512,50 @@ void G_RunMissile( gentity_t *ent ) {
 
 //=============================================================================
 
+/*********DEEPWATER******** //launch proximity mine
+/*
+=================
+fire_plasma
+
+=================
+*/
+gentity_t *fire_prox (gentity_t *self, vec3_t start, vec3_t dir) {
+	gentity_t	*bolt;
+
+	VectorNormalize (dir);
+
+	bolt = G_Spawn();
+	bolt->classname = "grenade";
+	bolt->nextthink = level.time + 10000;
+	bolt->think = G_ExplodeMissile;
+	bolt->s.eType = ET_MISSILE;
+	bolt->r.svFlags = SVF_USE_CURRENT_ORIGIN;
+	bolt->s.weapon = WP_PLASMAGUN;
+	bolt->r.ownerNum = self->s.number;
+	bolt->parent = self;
+	bolt->damage = 200;
+	bolt->splashDamage = 150;
+	bolt->splashRadius = 200;
+	bolt->methodOfDeath = MOD_PLASMA;
+	bolt->splashMethodOfDeath = MOD_PLASMA_SPLASH;
+	bolt->clipmask = MASK_SHOT;
+	bolt->target_ent = NULL;
+
+	bolt->s.pos.trType = TR_LINEAR;
+	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
+	VectorCopy( start, bolt->s.pos.trBase );
+	//********DEEPWATER******** //no movement
+	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
+	VectorScale( dir, 0, bolt->s.pos.trDelta );
+	//*************************
+	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
+
+	VectorCopy (start, bolt->r.currentOrigin);
+
+	return bolt;
+}
+/**************************/
+
 /*
 =================
 fire_plasma
@@ -543,7 +587,10 @@ gentity_t *fire_plasma (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	VectorScale( dir, 2000, bolt->s.pos.trDelta );
+	//********DEEPWATER******** //slow down bolt
+	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
+	VectorScale( dir, 100, bolt->s.pos.trDelta );
+	//*************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 
 	VectorCopy (start, bolt->r.currentOrigin);
@@ -566,7 +613,7 @@ gentity_t *fire_grenade (gentity_t *self, vec3_t start, vec3_t dir) {
 
 	bolt = G_Spawn();
 	bolt->classname = "grenade";
-	bolt->nextthink = level.time + 2500;
+	bolt->nextthink = level.time + 5000;
 	bolt->think = G_ExplodeMissile;
 	bolt->s.eType = ET_MISSILE;
 	bolt->r.svFlags = SVF_USE_CURRENT_ORIGIN;
@@ -582,12 +629,13 @@ gentity_t *fire_grenade (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->clipmask = MASK_SHOT;
 	bolt->target_ent = NULL;
 
-	bolt->s.pos.trType = TR_GRAVITY;
+	//bolt->s.pos.trType = TR_GRAVITY;
+	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	//********DEEPWATER******** //slow down grenade
+	//********DEEPWATER********
 	//VectorScale( dir, 700, bolt->s.pos.trDelta );
-	VectorScale( dir, 100, bolt->s.pos.trDelta );
+	VectorScale( dir, 30, bolt->s.pos.trDelta );
 	//*************************/
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 
@@ -598,6 +646,51 @@ gentity_t *fire_grenade (gentity_t *self, vec3_t start, vec3_t dir) {
 
 //=============================================================================
 
+/********DEEPWATER******** //fire machinegun bolt
+/*
+=================
+fire_mg
+=================
+*/
+gentity_t *fire_mg (gentity_t *self, vec3_t start, vec3_t dir) {
+	gentity_t	*bolt;
+
+	VectorNormalize (dir);
+
+	bolt = G_Spawn();
+	bolt->classname = "bfg";
+	bolt->nextthink = level.time + 10000;
+	bolt->think = G_ExplodeMissile;
+	bolt->s.eType = ET_MISSILE;
+	bolt->r.svFlags = SVF_USE_CURRENT_ORIGIN;
+	bolt->s.weapon = WP_BFG;
+	bolt->r.ownerNum = self->s.number;
+	bolt->parent = self;
+	bolt->damage = 100;
+	/********DEEPWATER******** //no bfg splash damage
+	bolt->splashDamage = 100;
+	bolt->splashRadius = 120;
+	/*************************/
+	bolt->methodOfDeath = MOD_BFG;
+	bolt->splashMethodOfDeath = MOD_BFG_SPLASH;
+	/********DEEPWATER******** //dont explode bfg shots
+	bolt->clipmask = MASK_SHOT;
+	/*************************/
+	bolt->target_ent = NULL;
+
+	bolt->s.pos.trType = TR_LINEAR;
+	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
+	VectorCopy( start, bolt->s.pos.trBase );
+	//********DEEPWATER******** //slow down bfg bolt
+	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
+	VectorScale( dir, 50, bolt->s.pos.trDelta );
+	//*************************/
+	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
+	VectorCopy (start, bolt->r.currentOrigin);
+
+	return bolt;
+}
+/*************************/
 
 /*
 =================
@@ -612,26 +705,30 @@ gentity_t *fire_bfg (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt = G_Spawn();
 	bolt->classname = "bfg";
 	bolt->nextthink = level.time + 10000;
-	//bolt->think = G_ExplodeMissile; deepwater lel kek
+	bolt->think = G_ExplodeMissile;
 	bolt->s.eType = ET_MISSILE;
 	bolt->r.svFlags = SVF_USE_CURRENT_ORIGIN;
 	bolt->s.weapon = WP_BFG;
 	bolt->r.ownerNum = self->s.number;
 	bolt->parent = self;
 	bolt->damage = 100;
+	/********DEEPWATER******** //no bfg splash damage
 	bolt->splashDamage = 100;
 	bolt->splashRadius = 120;
+	/*************************/
 	bolt->methodOfDeath = MOD_BFG;
 	bolt->splashMethodOfDeath = MOD_BFG_SPLASH;
+	/********DEEPWATER******** //dont explode bfg shots
 	bolt->clipmask = MASK_SHOT;
+	/*************************/
 	bolt->target_ent = NULL;
 
 	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	//********DEEPWATER******** //slow down bullet
+	//********DEEPWATER******** //slow down bfg bolt
 	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
-	VectorScale( dir, 220, bolt->s.pos.trDelta );
+	VectorScale( dir, 50, bolt->s.pos.trDelta );
 	//*************************/
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, bolt->r.currentOrigin);
@@ -721,6 +818,9 @@ gentity_t *fire_grapple (gentity_t *self, vec3_t start, vec3_t dir) {
 	return hook;
 }
 
+//********DEEPWATER******** //
+
+//*************************/
 
 #ifdef MISSIONPACK
 /*

@@ -511,7 +511,7 @@ void ProjectPointOnPlane( vec3_t dst, const vec3_t p, const vec3_t normal )
 	dst[1] = p[1] - d * n[1];
 	dst[2] = p[2] - d * n[2];
 }
-
+//Program.end - sungju yoon
 /*
 ================
 MakeNormalVectors

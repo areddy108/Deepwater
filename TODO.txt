@@ -1,16 +1,20 @@
-Class System:				Stock weapon:		Functionality:
+Class System:				Stock weapon:		Functionality (X = none, O = some, V = full):
 - Fragman
-	- Rifle				- WP_BFG		- X
-	- Grapple gun			- WP_GRAPPLING_HOOK	- X
+	- Rifle				- WP_BFG		- O
+	- Grapple			- WP_GRAPPLING_HOOK	- O
 - Corpsman
-	- Medic bag			- WP_GAUNTLET		- V
-	- Pistol			- WP_MACHINEGUN		- X
+	- Medical kit			- WP_GAUNTLET		- O
+	- Pistol			- WP_MACHINEGUN		- O
 - Sonartech
-	- Sonar screen			- WP_RAILGUN		- X
-	- Speargun			- WP_PLASMAGUN		- X
+	- Sonar buoy			- WP_RAILGUN		- X
+	- Spear gun			- WP_PLASMAGUN		- O
 - Mineman
-	- Proximity concussion mines	- WP_LIGHTNING		- X
-	- Grenade launcher		- WP_GRENADE_LAUNCHER	- X
+	- Proximity mine		- WP_LIGHTNING		- X
+	- Grenade launcher		- WP_GRENADE_LAUNCHER	- V
 - Gunner
 	- Torpedo launcher		- WP_ROCKET_LAUNCHER	- V
-	- Netgun			- WP_SHOTGUN		- X
+	- Net gun			- WP_SHOTGUN		- X
+
+Stuff:					Status:
+- Add air tank model to players		- 
+- 

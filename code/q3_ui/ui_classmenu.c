@@ -18,7 +18,7 @@
 #define ID_MINEMAN            203   //Boom boom
 #define ID_GUNNER             204   //Heavy
    
-qboolean teamFlag; //false = red team, true = blue team
+int teamFlag; //false = red team, true = blue team
 
 typedef 
    struct
@@ -46,34 +46,29 @@ static void Deepwater_MenuEvent (void* ptr, int event){
 
    switch(((menucommon_s*)ptr)->id){
       case ID_FRAGMAN:
-
-		  trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team fragman\n" );
-         UI_ForceMenuOff();
-         break;
+		trap_Cmd_ExecuteText( EXEC_APPEND, va("cmd team %ifragman\n", teamFlag) );
+        UI_ForceMenuOff();
+        break;
    
       case ID_CORPSMAN:
-		  
-		  trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team corpsman\n" );
-         UI_ForceMenuOff();
-         break;
+		trap_Cmd_ExecuteText( EXEC_APPEND, va("cmd team %icorpsman\n", teamFlag) );
+        UI_ForceMenuOff();
+        break;
    
       case ID_SONARTECH:
-		  
-		  trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team sonartech\n" );
-         UI_ForceMenuOff();
-         break;
+		trap_Cmd_ExecuteText( EXEC_APPEND, va("cmd team %isonartech\n", teamFlag) );
+        UI_ForceMenuOff();
+        break;
    
       case ID_MINEMAN:
-		  
-		  trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team mineman\n" );
-         UI_ForceMenuOff();
-         break;
+		trap_Cmd_ExecuteText( EXEC_APPEND, va("cmd team %imineman\n", teamFlag) );
+        UI_ForceMenuOff();
+        break;
    
       case ID_GUNNER:
-		  
-		  trap_Cmd_ExecuteText( EXEC_APPEND, "cmd team gunner\n" );
-         UI_ForceMenuOff();
-         break;
+		trap_Cmd_ExecuteText( EXEC_APPEND, va("cmd team %igunner\n", teamFlag) );
+        UI_ForceMenuOff();
+        break;
    }
 }
 
@@ -101,7 +96,7 @@ void Deepwater_InitializeMenu(void){
    menu.chooseFragman.generic.y        = y;
    menu.chooseFragman.string           = "Fragman";
    menu.chooseFragman.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-   menu.chooseFragman.color            = colorBlue;
+   menu.chooseFragman.color            = color_red;
    y += 30;
    
    menu.chooseCorpsman.generic.type     = MTYPE_PTEXT;
@@ -112,7 +107,7 @@ void Deepwater_InitializeMenu(void){
    menu.chooseCorpsman.generic.y        = y;
    menu.chooseCorpsman.string           = "Corpsman";
    menu.chooseCorpsman.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-   menu.chooseCorpsman.color            = colorBlue;
+   menu.chooseCorpsman.color            = color_red;
    y += 30;
    
    menu.chooseSonartech.generic.type     = MTYPE_PTEXT;
@@ -123,7 +118,7 @@ void Deepwater_InitializeMenu(void){
    menu.chooseSonartech.generic.y        = y;
    menu.chooseSonartech.string           = "Sonar Tech";
    menu.chooseSonartech.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-   menu.chooseSonartech.color            = colorBlue;
+   menu.chooseSonartech.color            = color_red;
    y += 30;
    
    menu.chooseMineman.generic.type     = MTYPE_PTEXT;
@@ -134,7 +129,7 @@ void Deepwater_InitializeMenu(void){
    menu.chooseMineman.generic.y        = y;
    menu.chooseMineman.string           = "Mineman";
    menu.chooseMineman.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-   menu.chooseMineman.color            = colorBlue;
+   menu.chooseMineman.color            = color_red;
    y += 30;
 	
    menu.chooseGunner.generic.type     = MTYPE_PTEXT;
@@ -145,7 +140,7 @@ void Deepwater_InitializeMenu(void){
    menu.chooseGunner.generic.y        = y;
    menu.chooseGunner.string           = "Gunner";
    menu.chooseGunner.style            = UI_CENTER|UI_BIGFONT|UI_DROPSHADOW;
-   menu.chooseGunner.color            = colorBlue;
+   menu.chooseGunner.color            = color_red;
    y += 30;
 
    trap_GetConfigString(CS_SERVERINFO, info, MAX_INFO_STRING);
@@ -162,7 +157,8 @@ void DeepwaterMenu_Cache(void){
 	trap_R_RegisterShaderNoMip(MENU_FRAME);
 }
 
-void UI_DeepwaterMenu(void){
+void UI_DeepwaterMenu(int tf){
+	teamFlag = tf;
 	Deepwater_InitializeMenu();
 	UI_PushMenu(&menu.menuFramework);
 }

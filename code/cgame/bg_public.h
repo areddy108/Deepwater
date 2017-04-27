@@ -6,7 +6,10 @@
 // second version that must match between game and cgame
 #define	GAME_VERSION		"baseq3-1"
 
-#define	DEFAULT_GRAVITY		800
+//********DEEPWATER******** //lessen gravity on ents
+//#define	DEFAULT_GRAVITY		800
+#define	DEFAULT_GRAVITY		100
+//*************************
 #define	GIB_HEALTH			-40
 #define	ARMOR_PROTECTION	0.66
 
