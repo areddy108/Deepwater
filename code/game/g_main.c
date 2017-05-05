@@ -1650,7 +1650,7 @@ void CheckTeamVote( int team ) {
 			// same behavior as a timeout
 			trap_SendServerCommand( -1, "print \"Team vote failed.\n\"" );
 		} else {
-			// still waiting for a majority
+			// still waiting for a majorityhttps://www.youtube.com/watch?v=VWDXSeTXOZ8
 			return;
 		}
 	}
@@ -1687,10 +1687,49 @@ Runs thinking code for this frame if necessary
 */
 void G_RunThink (gentity_t *ent) {
 	float	thinktime;
+	//********DEEPWATER******** //variables for deepwater think function
+	float		drag;
+	//int			i;
+	//gentity_t	*clientEnt;
+	//*************************/
 
 	//********DEEPWATER******** //drag on bolts
-	VectorScale(ent->s.pos.trDelta, 0.93, ent->s.pos.trDelta);//drag on movement vector
+	if(strcmp(ent->classname, "bfg") == 0){
+		drag = 0.1f;
+		G_Printf("pls\n");
+	}else if(strcmp(ent->classname, "plasma") == 0){
+		drag = 0.2f;
+	}else if(strcmp(ent->classname, "mine") == 0){
+		drag = 0.9f;
+	}else if(strcmp(ent->classname, "grenade") == 0){
+		drag = 0.2f;
+	}else if(strcmp(ent->classname, "rocket") == 0){
+		drag = 0.0f;
+	}else if(strcmp(ent->classname, "net") == 0){
+		drag = 0.5f;
+	}else{
+		drag = 0.0f;
+	}
+	VectorScale(ent->s.pos.trDelta, 1 - drag, ent->s.pos.trDelta);//drag on movement vector
 	VectorCopy( ent->r.currentOrigin, ent->s.pos.trBase );
+	//*************************/
+
+	/********DEEPWATER******** //think for proximity mines
+	if(strcmp(ent->classname, "mine") != 0){
+		//check for nearby players
+		for(i = 0; i < sizeof(&g_entities); i++){
+			clientEnt = &g_entities[i];
+			if(!clientEnt->client)//only check client entities
+				continue;
+			//check distance between player and mine
+			if(sqrt(pow(clientEnt->s.origin[0] - ent->s.origin[0], 2) +
+					pow(clientEnt->s.origin[1] - ent->s.origin[1], 2) +
+					pow(clientEnt->s.origin[2] - ent->s.origin[2], 2)) < 10){
+				//trigger mine
+				G_Printf("yeas");
+			}
+		}
+	}
 	//*************************/
 
 	thinktime = ent->nextthink;

@@ -1004,8 +1004,10 @@ void ClientBegin( int clientNum ) {
 	gclient_t	*client;
 	gentity_t	*tent;
 	int			flags;
-
-	int			playerClass; //DEEPWATER - preserve player class value
+	
+	//********DEEPWATER******** //preserve player class value
+	int			playerClass;
+	//*************************/
 
 	ent = g_entities + clientNum;
 

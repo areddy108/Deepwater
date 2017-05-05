@@ -515,7 +515,7 @@ void G_RunMissile( gentity_t *ent ) {
 /*********DEEPWATER******** //launch proximity mine
 /*
 =================
-fire_plasma
+fire_prox
 
 =================
 */
@@ -525,29 +525,25 @@ gentity_t *fire_prox (gentity_t *self, vec3_t start, vec3_t dir) {
 	VectorNormalize (dir);
 
 	bolt = G_Spawn();
-	bolt->classname = "grenade";
+	bolt->classname = "plasma";
 	bolt->nextthink = level.time + 10000;
 	bolt->think = G_ExplodeMissile;
 	bolt->s.eType = ET_MISSILE;
 	bolt->r.svFlags = SVF_USE_CURRENT_ORIGIN;
-	bolt->s.weapon = WP_PLASMAGUN;
+	bolt->s.weapon = WP_LIGHTNING;
 	bolt->r.ownerNum = self->s.number;
 	bolt->parent = self;
-	bolt->damage = 200;
-	bolt->splashDamage = 150;
-	bolt->splashRadius = 200;
-	bolt->methodOfDeath = MOD_PLASMA;
-	bolt->splashMethodOfDeath = MOD_PLASMA_SPLASH;
+	bolt->damage = 20;
+	bolt->splashDamage = 15;
+	bolt->splashRadius = 20;
+	bolt->methodOfDeath = MOD_PROX_MINE;
 	bolt->clipmask = MASK_SHOT;
 	bolt->target_ent = NULL;
 
 	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	//********DEEPWATER******** //no movement
-	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
 	VectorScale( dir, 0, bolt->s.pos.trDelta );
-	//*************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 
 	VectorCopy (start, bolt->r.currentOrigin);
@@ -589,7 +585,7 @@ gentity_t *fire_plasma (gentity_t *self, vec3_t start, vec3_t dir) {
 	VectorCopy( start, bolt->s.pos.trBase );
 	//********DEEPWATER******** //slow down bolt
 	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
-	VectorScale( dir, 100, bolt->s.pos.trDelta );
+	VectorScale( dir, 70, bolt->s.pos.trDelta );
 	//*************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 
@@ -633,9 +629,9 @@ gentity_t *fire_grenade (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	//********DEEPWATER********
+	//********DEEPWATER******** //slower initial velocity
 	//VectorScale( dir, 700, bolt->s.pos.trDelta );
-	VectorScale( dir, 30, bolt->s.pos.trDelta );
+	VectorScale( dir, 40, bolt->s.pos.trDelta );
 	//*************************/
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 
@@ -728,7 +724,7 @@ gentity_t *fire_bfg (gentity_t *self, vec3_t start, vec3_t dir) {
 	VectorCopy( start, bolt->s.pos.trBase );
 	//********DEEPWATER******** //slow down bfg bolt
 	//VectorScale( dir, 2000, bolt->s.pos.trDelta );
-	VectorScale( dir, 50, bolt->s.pos.trDelta );
+	VectorScale( dir, 100, bolt->s.pos.trDelta );
 	//*************************/
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, bolt->r.currentOrigin);
@@ -774,7 +770,7 @@ gentity_t *fire_rocket (gentity_t *self, vec3_t start, vec3_t dir) {
 	VectorCopy( start, bolt->s.pos.trBase );
 	//********DEEPWATER******** //slow down rocket (torpedo)
 	//VectorScale( dir, 900, bolt->s.pos.trDelta );
-	VectorScale( dir, 100, bolt->s.pos.trDelta );
+	VectorScale( dir, 30, bolt->s.pos.trDelta );
 	//************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, bolt->r.currentOrigin);
@@ -817,10 +813,6 @@ gentity_t *fire_grapple (gentity_t *self, vec3_t start, vec3_t dir) {
 
 	return hook;
 }
-
-//********DEEPWATER******** //
-
-//*************************/
 
 #ifdef MISSIONPACK
 /*

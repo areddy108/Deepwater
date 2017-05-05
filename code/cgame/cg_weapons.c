@@ -2007,7 +2007,9 @@ CG_ShotgunPellet
 */
 static void CG_ShotgunPellet( vec3_t start, vec3_t end, int skipNum ) {
 	trace_t		tr;
-	trace_t trace; //DEEPWATER - used for bubble trail
+	//********DEEPWATER******** //used for bubble trail
+	trace_t trace;
+	//*************************/
 	int sourceContentType, destContentType;
 
 	CG_Trace( &tr, start, NULL, NULL, end, skipNum, MASK_SHOT );

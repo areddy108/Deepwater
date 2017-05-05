@@ -158,6 +158,7 @@ void SnapVectorTowards( vec3_t v, vec3_t to ) {
 #define	MACHINEGUN_TEAM_DAMAGE	5		// wimpier MG in teamplay
 
 void Bullet_Fire (gentity_t *ent, float spread, int damage ) {
+	/********DEEPWATER******** //assert our dominance by using bolt instead of raytrace
 	trace_t		tr;
 	vec3_t		end;
 #ifdef MISSIONPACK
@@ -229,6 +230,13 @@ void Bullet_Fire (gentity_t *ent, float spread, int damage ) {
 		}
 		break;
 	}
+	*/
+	gentity_t	*m;
+
+	m = fire_mg (ent, muzzle, forward);
+	m->damage *= s_quadFactor;
+	m->splashDamage *= s_quadFactor;
+	/*************************/
 }
 
 
@@ -614,6 +622,7 @@ LIGHTNING GUN
 */
 
 void Weapon_LightningFire( gentity_t *ent ) {
+	/********DEEPWATER******** //replace with proximity mines
 	trace_t		tr;
 	vec3_t		end;
 #ifdef MISSIONPACK
@@ -690,6 +699,13 @@ void Weapon_LightningFire( gentity_t *ent ) {
 
 		break;
 	}
+	*/
+	gentity_t	*m;
+
+	m = fire_prox (ent, muzzle, forward);//proximity mine
+	m->damage *= s_quadFactor;
+	m->splashDamage *= s_quadFactor;
+	/*************************/
 }
 
 #ifdef MISSIONPACK

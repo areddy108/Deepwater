@@ -259,8 +259,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/rocketl/rocketl.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_rocket",
-//DEEPWATER
+/********DEEPWATER******** //change rocket launcher name
+/* pickup */	//"Rocket Launcher",
 /* pickup */	"Torpedo Launcher",
+/*************************/
 		10,
 		IT_WEAPON,
 		WP_ROCKET_LAUNCHER,

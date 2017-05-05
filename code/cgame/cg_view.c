@@ -473,7 +473,9 @@ static int CG_CalcFov( void ) {
 	float	x;
 	float	phase;
 	float	v;
-	//int		contents;		//DEEPWATER - ignore this (not needed)
+	/********DEEPWATER******** //ignore this (not needed)
+	int		contents;
+	/*************************/
 	float	fov_x, fov_y;
 	float	zoomFov;
 	float	f;

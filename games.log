@@ -4447,3 +4447,255 @@
   0:02 ClientBegin: 0
   0:12 ShutdownGame:
   0:12 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:12 ShutdownGame:
+  0:12 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:16 ShutdownGame:
+  0:16 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:42 ShutdownGame:
+  0:42 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:12 Item: 0 item_armor_shard
+  0:12 Item: 0 item_armor_shard
+  0:13 Item: 0 item_armor_shard
+  0:40 Item: 0 weapon_shotgun
+  0:49 ShutdownGame:
+  0:49 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:10 Item: 0 item_armor_shard
+  0:10 Item: 0 item_armor_shard
+  0:11 Item: 0 item_armor_shard
+  0:57 ShutdownGame:
+  0:57 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:20 ShutdownGame:
+  0:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:12 ShutdownGame:
+  0:12 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:09 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:09 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:09 ClientBegin: 0
+  0:19 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:19 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:19 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:19 ClientBegin: 0
+  0:35 ShutdownGame:
+  0:35 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:33 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:33 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:33 ClientBegin: 0
+  0:41 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:41 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:41 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:41 ClientBegin: 0
+  1:01 ShutdownGame:
+  1:01 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:08 Item: 0 item_armor_shard
+  0:10 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:10 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:10 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:10 ClientBegin: 0
+  0:19 ShutdownGame:
+  0:19 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:37 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:37 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:37 ClientBegin: 0
+  0:41 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:41 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:41 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:41 ClientBegin: 0
+  1:10 ShutdownGame:
+  1:10 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:07 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:07 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:07 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:07 ClientBegin: 0
+  0:14 ShutdownGame:
+  0:14 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:16 Item: 0 weapon_rocketlauncher
+  0:17 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:17 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:17 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:17 ClientBegin: 0
+  0:25 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:25 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:25 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:25 ClientBegin: 0
+  0:30 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:30 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:30 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:30 ClientBegin: 0
+  0:35 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:35 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:35 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:35 ClientBegin: 0
+  0:40 ShutdownGame:
+  0:40 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:07 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:07 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:07 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:07 ClientBegin: 0
+  0:20 ShutdownGame:
+  0:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:09 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:09 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:09 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:09 ClientBegin: 0
+  0:20 ShutdownGame:
+  0:20 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\g_maxGameClients\0\capturelimit\0\sv_maxclients\8\timelimit\20\fraglimit\0\dmflags\0\g_blueTeam\Pagans\g_redTeam\Stroggs\sv_floodProtect\1\sv_maxPing\0\sv_minPing\0\sv_maxRate\0\sv_punkbuster\0\sv_hostname\deathRace\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:02 ClientBegin: 0
+  0:15 ShutdownGame:
+  0:15 ------------------------------------------------------------
+  0:00 ------------------------------------------------------------
+  0:00 InitGame: \g_gametype\3\sv_hostname\deathRace\sv_punkbuster\0\sv_maxRate\0\sv_minPing\0\sv_maxPing\0\sv_floodProtect\1\g_redTeam\Stroggs\g_blueTeam\Pagans\dmflags\0\fraglimit\0\timelimit\20\sv_maxclients\8\capturelimit\0\g_maxGameClients\0\version\Q3 1.32 win-x86 Oct  7 2002\protocol\68\mapname\q3dm1\sv_privateClients\0\sv_allowDownload\0\gamename\baseq3\g_needpass\0
+  0:00 ClientConnect: 0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientUserinfoChanged: 0 n\RevOk\t\3\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\0
+  0:00 ClientBegin: 0
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:01 ClientBegin: 0
+  0:05 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:05 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:05 ClientBegin: 0
+  0:11 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:11 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:11 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:11 ClientBegin: 0
+  0:16 Kill: 0 0 21: RevOk killed RevOk by MOD_TARGET_LASER
+  0:16 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:16 ClientUserinfoChanged: 0 n\RevOk\t\2\model\uriel/blue\hmodel\doom\g_redteam\\g_blueteam\\c1\4\c2\5\hc\100\w\0\l\0\tt\0\tl\1
+  0:16 ClientBegin: 0
+  0:22 ShutdownGame:
+  0:22 ------------------------------------------------------------

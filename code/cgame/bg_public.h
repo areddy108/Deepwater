@@ -467,6 +467,9 @@ typedef enum {
 	MOD_PLASMA_SPLASH,
 	MOD_RAILGUN,
 	MOD_LIGHTNING,
+	//********DEEPWATER******** //prox mine mean of death
+	MOD_PROX_MINE,
+	//*************************/
 	MOD_BFG,
 	MOD_BFG_SPLASH,
 	MOD_WATER,
