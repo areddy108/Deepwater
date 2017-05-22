@@ -1688,15 +1688,17 @@ Runs thinking code for this frame if necessary
 void G_RunThink (gentity_t *ent) {
 	float	thinktime;
 	//********DEEPWATER******** //variables for deepwater think function
+	//Drag think
 	float		drag;
-	//int			i;
-	//gentity_t	*clientEnt;
+	//Prox mine think
+	gentity_t	*target;
+	vec3_t		min, max;
+	int			radius, numProx[MAX_GENTITIES], i;
 	//*************************/
 
 	//********DEEPWATER******** //drag on bolts
 	if(strcmp(ent->classname, "bfg") == 0){
 		drag = 0.1f;
-		G_Printf("pls\n");
 	}else if(strcmp(ent->classname, "plasma") == 0){
 		drag = 0.2f;
 	}else if(strcmp(ent->classname, "mine") == 0){
@@ -1714,20 +1716,32 @@ void G_RunThink (gentity_t *ent) {
 	VectorCopy( ent->r.currentOrigin, ent->s.pos.trBase );
 	//*************************/
 
-	/********DEEPWATER******** //think for proximity mines
-	if(strcmp(ent->classname, "mine") != 0){
-		//check for nearby players
-		for(i = 0; i < sizeof(&g_entities); i++){
-			clientEnt = &g_entities[i];
-			if(!clientEnt->client)//only check client entities
+	//********DEEPWATER******** //think for proximity mines
+	if(strcmp(ent->classname, "mine") == 0 && ent->){
+		radius = 200;
+		
+		min[0] = -radius;
+		min[1] = -radius;
+		min[2] = -radius;
+		max[0] = radius;
+		max[1] = radius;
+		max[2] = radius;
+
+		VectorAdd(ent->r.currentOrigin, min, min);
+		VectorAdd(ent->r.currentOrigin, max, max);
+
+		for(i = trap_EntitiesInBox(min, max, numProx, MAX_GENTITIES) - 1; i > 0; i--){
+			target = &g_entities[numProx[i]];
+			//Target must be client
+			if(!target->client)
 				continue;
-			//check distance between player and mine
-			if(sqrt(pow(clientEnt->s.origin[0] - ent->s.origin[0], 2) +
-					pow(clientEnt->s.origin[1] - ent->s.origin[1], 2) +
-					pow(clientEnt->s.origin[2] - ent->s.origin[2], 2)) < 10){
-				//trigger mine
-				G_Printf("yeas");
-			}
+			//Must be within trigger radius
+			if(Distance(ent->r.currentOrigin, target->r.currentOrigin) > radius)
+				continue;
+			//TRIGGERED
+			//G_Printf("pls");
+			ent->nextthink = level.time + 2000;
+			break;
 		}
 	}
 	//*************************/

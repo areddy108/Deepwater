@@ -195,7 +195,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/gauntlet/gauntlet.md3",
 		0, 0, 0},
 /* icon */		"icons/iconw_gauntlet",
-/* pickup */	"Gauntlet",
+/********DEEPWATER******** //change gauntlet name
+/* pickup */	//"Gauntlet",
+/* pickup */	"Medical Kit",
+/*************************/
 		0,
 		IT_WEAPON,
 		WP_GAUNTLET,
@@ -211,7 +214,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/shotgun/shotgun.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_shotgun",
-/* pickup */	"Shotgun",
+/********DEEPWATER******** //change shotgun name
+/* pickup */	//"Shotgun",
+/* pickup */	"Net Gun",
+/*************************/
 		10,
 		IT_WEAPON,
 		WP_SHOTGUN,
@@ -227,7 +233,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/machinegun/machinegun.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_machinegun",
-/* pickup */	"Machinegun",
+/********DEEPWATER******** //change machinegun name
+/* pickup */	//"Machinegun",
+/* pickup */	"Pistol",
+/*************************/
 		40,
 		IT_WEAPON,
 		WP_MACHINEGUN,
@@ -278,7 +287,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/lightning/lightning.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_lightning",
-/* pickup */	"Lightning Gun",
+/********DEEPWATER******** //change lightning gun name
+/* pickup */	//"Lightning Gun",
+/* pickup */	"Proximity Mine",
+/*************************/
 		100,
 		IT_WEAPON,
 		WP_LIGHTNING,
@@ -294,7 +306,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/railgun/railgun.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_railgun",
-/* pickup */	"Railgun",
+/********DEEPWATER******** //change railgun name
+/* pickup */	//"Railgun",
+/* pickup */	"Sonar Buoy",
+/*************************/
 		10,
 		IT_WEAPON,
 		WP_RAILGUN,
@@ -310,7 +325,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/plasma/plasma.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_plasma",
-/* pickup */	"Plasma Gun",
+/********DEEPWATER******** //change plasma gun name
+/* pickup */	//"Plasma Gun",
+/* pickup */	"Spear Gun",
+/*************************/
 		50,
 		IT_WEAPON,
 		WP_PLASMAGUN,
@@ -326,7 +344,10 @@ gitem_t	bg_itemlist[] =
         { "models/weapons2/bfg/bfg.md3", 
 		0, 0, 0},
 /* icon */		"icons/iconw_bfg",
-/* pickup */	"BFG10K",
+/********DEEPWATER******** //change bfg name
+/* pickup */	//"BFG10K",
+/* pickup */	"Rifle",
+/*************************/
 		20,
 		IT_WEAPON,
 		WP_BFG,

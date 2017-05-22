@@ -525,7 +525,7 @@ gentity_t *fire_prox (gentity_t *self, vec3_t start, vec3_t dir) {
 	VectorNormalize (dir);
 
 	bolt = G_Spawn();
-	bolt->classname = "plasma";
+	bolt->classname = "grenade";
 	bolt->nextthink = level.time + 10000;
 	bolt->think = G_ExplodeMissile;
 	bolt->s.eType = ET_MISSILE;
@@ -543,7 +543,7 @@ gentity_t *fire_prox (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->s.pos.trType = TR_LINEAR;
 	bolt->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	VectorCopy( start, bolt->s.pos.trBase );
-	VectorScale( dir, 0, bolt->s.pos.trDelta );
+	VectorScale( dir, 10, bolt->s.pos.trDelta );
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 
 	VectorCopy (start, bolt->r.currentOrigin);
@@ -770,7 +770,7 @@ gentity_t *fire_rocket (gentity_t *self, vec3_t start, vec3_t dir) {
 	VectorCopy( start, bolt->s.pos.trBase );
 	//********DEEPWATER******** //slow down rocket (torpedo)
 	//VectorScale( dir, 900, bolt->s.pos.trDelta );
-	VectorScale( dir, 30, bolt->s.pos.trDelta );
+	VectorScale( dir, 10, bolt->s.pos.trDelta );
 	//************************
 	SnapVector( bolt->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, bolt->r.currentOrigin);

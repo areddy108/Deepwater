@@ -448,6 +448,7 @@ weapon_railgun_fire
 */
 #define	MAX_RAIL_HITS	4
 void weapon_railgun_fire (gentity_t *ent) {
+	/********DEEPWATER******** //replace with sonar buoy
 	vec3_t		end;
 #ifdef MISSIONPACK
 	vec3_t impactpoint, bouncedir;
@@ -565,11 +566,13 @@ void weapon_railgun_fire (gentity_t *ent) {
 			ent->client->ps.eFlags &= ~(EF_AWARD_IMPRESSIVE | EF_AWARD_EXCELLENT | EF_AWARD_GAUNTLET | EF_AWARD_ASSIST | EF_AWARD_DEFEND | EF_AWARD_CAP );
 			ent->client->ps.eFlags |= EF_AWARD_IMPRESSIVE;
 			ent->client->rewardTime = level.time + REWARD_SPRITE_TIME;
-//********---**************************************/
+//********---**************************************
 		}
 		ent->client->accuracy_hits++;
 	}
-
+	*/
+	//SONAR FUNCTION HERE I GUESS
+	/*************************/
 }
 
 
