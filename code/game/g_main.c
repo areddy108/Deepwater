@@ -1717,7 +1717,7 @@ void G_RunThink (gentity_t *ent) {
 	//*************************/
 
 	//********DEEPWATER******** //think for proximity mines
-	if(strcmp(ent->classname, "mine") == 0 && ent->){
+	if(strcmp(ent->classname, "mine") == 0){
 		radius = 200;
 		
 		min[0] = -radius;
@@ -1735,11 +1735,13 @@ void G_RunThink (gentity_t *ent) {
 			//Target must be client
 			if(!target->client)
 				continue;
+			//Do not trigger on parent
+			if(target == ent->parent)
+				continue;
 			//Must be within trigger radius
 			if(Distance(ent->r.currentOrigin, target->r.currentOrigin) > radius)
 				continue;
 			//TRIGGERED
-			//G_Printf("pls");
 			ent->nextthink = level.time + 2000;
 			break;
 		}

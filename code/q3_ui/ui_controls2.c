@@ -1430,6 +1430,9 @@ static void Controls_MenuInit( void )
 	s_controls.attack.generic.ownerdraw = Controls_DrawKeyBinding;
 	s_controls.attack.generic.id        = ID_ATTACK;
 
+	//********DEEPWATER******** //add reload key bind
+	//*************************/
+
 	s_controls.prevweapon.generic.type	    = MTYPE_ACTION;
 	s_controls.prevweapon.generic.flags     = QMF_LEFT_JUSTIFY|QMF_PULSEIFFOCUS|QMF_GRAYED|QMF_HIDDEN;
 	s_controls.prevweapon.generic.callback  = Controls_ActionEvent;

@@ -914,6 +914,28 @@ void FireWeapon( gentity_t *ent ) {
 // FIXME		G_Error( "Bad ent->s.weapon" );
 		break;
 	}
+	
+	//********DEEPWATER******** //regulate fire rate
+	switch(ent->s.weapon){
+	case WP_BFG:
+		ent->client->ps.weaponTime += 20;
+		break;
+	case WP_MACHINEGUN:
+		ent->client->ps.weaponTime += 10;
+		break;
+	case WP_LIGHTNING:
+		ent->client->ps.weaponTime += 500;
+		break;
+	case WP_GRENADE_LAUNCHER:
+		ent->client->ps.weaponTime += 400;
+		break;
+	case WP_SHOTGUN:
+		ent->client->ps.weaponTime += 600;
+		break;
+	default:
+		break;
+	}
+	//*************************/
 }
 
 
