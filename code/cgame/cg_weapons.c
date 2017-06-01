@@ -1561,9 +1561,11 @@ CG_WeaponSelectable
 ===============
 */
 static qboolean CG_WeaponSelectable( int i ) {
+	/********DEEPWATER******** //allow dry weapons to be selected
 	if ( !cg.snap->ps.ammo[i] ) {
 		return qfalse;
 	}
+	/*************************/
 	if ( ! (cg.snap->ps.stats[ STAT_WEAPONS ] & ( 1 << i ) ) ) {
 		return qfalse;
 	}
@@ -1595,9 +1597,11 @@ void CG_NextWeapon_f( void ) {
 		if ( cg.weaponSelect == 16 ) {
 			cg.weaponSelect = 0;
 		}
+		/********DEEPWATER******** //allow cycling to gantlet
 		if ( cg.weaponSelect == WP_GAUNTLET ) {
 			continue;		// never cycle to gauntlet
 		}
+		/*************************/
 		if ( CG_WeaponSelectable( cg.weaponSelect ) ) {
 			break;
 		}
@@ -1631,9 +1635,11 @@ void CG_PrevWeapon_f( void ) {
 		if ( cg.weaponSelect == -1 ) {
 			cg.weaponSelect = 15;
 		}
+		/********DEEPWATER******** //allow cycling to gantlet
 		if ( cg.weaponSelect == WP_GAUNTLET ) {
 			continue;		// never cycle to gauntlet
 		}
+		/*************************/
 		if ( CG_WeaponSelectable( cg.weaponSelect ) ) {
 			break;
 		}

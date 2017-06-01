@@ -109,6 +109,9 @@ typedef struct
 #define ID_GESTURE		29
 #define ID_CHAT			30
 #define ID_CHAT2		31
+//********DEEPWATER******** //define reload key
+#define ID_RELOAD		32
+//*************************/
 /************CLEANMOD********remove unneeded features
 #define ID_CHAT3		32
 #define ID_CHAT4		33
@@ -267,6 +270,9 @@ static bind_t g_bindings[] =
 	{"+button3", 		"gesture",			ID_GESTURE,		ANIM_GESTURE,	K_MOUSE3,		-1,		-1, -1},
 	{"messagemode", 	"chat",				ID_CHAT,		ANIM_CHAT,		't',			-1,		-1, -1},
 	{"messagemode2", 	"chat - team",		ID_CHAT2,		ANIM_CHAT,		-1,				-1,		-1, -1},
+	//********DEEPWATER******** //add reload key bind
+	{"reload",			"reload",			ID_RELOAD,		ANIM_IDLE,		'r',			-1,		-1, -1},
+	//*************************/
 /************CLEANMOD********remove unneeded features
 	{"messagemode3", 	"chat - target",	ID_CHAT3,		ANIM_CHAT,		-1,				-1,		-1, -1},
 	{"messagemode4", 	"chat - attacker",	ID_CHAT4,		ANIM_CHAT,		-1,				-1,		-1, -1},
@@ -1431,6 +1437,11 @@ static void Controls_MenuInit( void )
 	s_controls.attack.generic.id        = ID_ATTACK;
 
 	//********DEEPWATER******** //add reload key bind
+	s_controls.attack.generic.type	    = MTYPE_ACTION;
+	s_controls.attack.generic.flags     = QMF_LEFT_JUSTIFY|QMF_PULSEIFFOCUS|QMF_GRAYED|QMF_HIDDEN;
+	s_controls.attack.generic.callback  = Controls_ActionEvent;
+	s_controls.attack.generic.ownerdraw = Controls_DrawKeyBinding;
+	s_controls.attack.generic.id        = ID_RELOAD;
 	//*************************/
 
 	s_controls.prevweapon.generic.type	    = MTYPE_ACTION;

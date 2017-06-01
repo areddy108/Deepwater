@@ -1629,6 +1629,46 @@ void Cmd_Stats_f( gentity_t *ent ) {
 */
 }
 
+//********DEEPWATER******** //reload command
+void Cmd_Reload(gentity_t *ent){
+	int weapon = ent->client->ps.weapon;
+	int magSize = Mag_Size(weapon);
+	
+	ent->client->ps.weaponstate = WEAPON_DROPPING;
+	ent->client->ps.torsoAnim = ( ( ent->client->ps.torsoAnim & ANIM_TOGGLEBIT ) ^ ANIM_TOGGLEBIT )	| TORSO_DROP;
+	ent->client->ps.weaponTime += Reload_Time(weapon);
+	ent->client->ps.ammo[weapon] = magSize;
+}
+//*************************/
+
+//********DEEPWATER******** //helper methods for reload
+int Mag_Size(int weapon){
+	switch(weapon){
+	case(WP_BFG):				return 30;
+	case(WP_MACHINEGUN):		return 20;
+	case(WP_PLASMAGUN):			return 1;
+	case(WP_LIGHTNING):			return 2;
+	case(WP_GRENADE_LAUNCHER):	return 6;
+	case(WP_ROCKET_LAUNCHER):	return 1;
+	case(WP_SHOTGUN):			return 2;
+	default: return -1;
+	}
+}
+
+int Reload_Time(int weapon){
+	switch(weapon){
+	case(WP_BFG):				return 1500;
+	case(WP_MACHINEGUN):		return 1000;
+	case(WP_PLASMAGUN):			return 2000;
+	case(WP_LIGHTNING):			return 2500;
+	case(WP_GRENADE_LAUNCHER):	return 2500;
+	case(WP_ROCKET_LAUNCHER):	return 3000;
+	case(WP_SHOTGUN):			return 2000;
+	default: return 0;
+	}
+}
+//*************************/
+
 /*
 =================
 ClientCommand
@@ -1735,6 +1775,10 @@ void ClientCommand( int clientNum ) {
 		Cmd_SetViewpos_f( ent );
 	else if (Q_stricmp (cmd, "stats") == 0)
 		Cmd_Stats_f( ent );
+	//********DEEPWATER******** //call reload command
+	else if (Q_stricmp (cmd, "reload") == 0)
+		Cmd_Reload(ent);
+	//*************************/
 	else
 		trap_SendServerCommand( clientNum, va("print \"unknown cmd %s\n\"", cmd ) );
 }

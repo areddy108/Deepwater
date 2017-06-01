@@ -1219,8 +1219,8 @@ void ClientSpawn(gentity_t *ent) {
 			client->ps.stats[STAT_WEAPONS] = (1 << WP_BFG);					//rifle
 			client->ps.stats[STAT_WEAPONS] |= (1 << WP_GRAPPLING_HOOK);		//grapple launcher
 
-			client->ps.ammo[WP_BFG] = 100;
-			client->ps.ammo[WP_GRAPPLING_HOOK] = 100;
+			client->ps.ammo[WP_BFG] = Mag_Size(WP_BFG);
+			client->ps.ammo[WP_GRAPPLING_HOOK] = Mag_Size(WP_GRAPPLING_HOOK);
 
 			break;
 
@@ -1229,7 +1229,7 @@ void ClientSpawn(gentity_t *ent) {
 			client->ps.stats[STAT_WEAPONS] |= (1 << WP_MACHINEGUN);			//pistol
 			
 			client->ps.ammo[WP_GAUNTLET] = -1;
-			client->ps.ammo[WP_MACHINEGUN] = 100;
+			client->ps.ammo[WP_MACHINEGUN] = Mag_Size(WP_MACHINEGUN);
 
 			break;
 
@@ -1237,8 +1237,8 @@ void ClientSpawn(gentity_t *ent) {
 			client->ps.stats[STAT_WEAPONS] = (1 << WP_RAILGUN);				//sonar screen
 			client->ps.stats[STAT_WEAPONS] |= (1 << WP_PLASMAGUN);			//harpoon launcher
 
-			client->ps.ammo[WP_RAILGUN] = 100;
-			client->ps.ammo[WP_PLASMAGUN] = 100;
+			client->ps.ammo[WP_RAILGUN] = -1;
+			client->ps.ammo[WP_PLASMAGUN] = Mag_Size(WP_PLASMAGUN);
 
 			break;
 
@@ -1246,8 +1246,8 @@ void ClientSpawn(gentity_t *ent) {
 			client->ps.stats[STAT_WEAPONS] = (1 << WP_LIGHTNING);			//mine layer
 			client->ps.stats[STAT_WEAPONS] |= (1 << WP_GRENADE_LAUNCHER);	//grenade launcher
 			
-			client->ps.ammo[WP_LIGHTNING] = 100;
-			client->ps.ammo[WP_GRENADE_LAUNCHER] = 100;
+			client->ps.ammo[WP_LIGHTNING] = Mag_Size(WP_LIGHTNING);
+			client->ps.ammo[WP_GRENADE_LAUNCHER] = Mag_Size(WP_GRENADE_LAUNCHER);
 
 			break;
 
@@ -1255,8 +1255,8 @@ void ClientSpawn(gentity_t *ent) {
 			client->ps.stats[STAT_WEAPONS] = (1 << WP_ROCKET_LAUNCHER);		//torpedo launcher
 			client->ps.stats[STAT_WEAPONS] |= (1 << WP_SHOTGUN);			//net gun
 			
-			client->ps.ammo[WP_ROCKET_LAUNCHER] = 100;
-			client->ps.ammo[WP_SHOTGUN] = 100;
+			client->ps.ammo[WP_ROCKET_LAUNCHER] = Mag_Size(WP_ROCKET_LAUNCHER);
+			client->ps.ammo[WP_SHOTGUN] = Mag_Size(WP_SHOTGUN);
 
 			break;
 	}

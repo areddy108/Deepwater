@@ -435,6 +435,11 @@ void StopFollowing( gentity_t *ent );
 void BroadcastTeamChange( gclient_t *client, int oldTeam );
 void SetTeam( gentity_t *ent, char *s );
 void Cmd_FollowCycle_f( gentity_t *ent, int dir );
+//********DEEPWATER******** //reload methods
+void Cmd_Reload(gentity_t *ent);
+int Mag_Size(int weapon);
+int Reload_Time(int weapon);
+//*************************/
 
 //
 // g_items.c
