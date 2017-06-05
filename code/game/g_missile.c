@@ -526,16 +526,16 @@ gentity_t *fire_prox (gentity_t *self, vec3_t start, vec3_t dir) {
 
 	bolt = G_Spawn();
 	bolt->classname = "grenade";
-	bolt->nextthink = level.time + 10000;
+	bolt->nextthink = level.time + 50000;
 	bolt->think = G_ExplodeMissile;
 	bolt->s.eType = ET_MISSILE;
 	bolt->r.svFlags = SVF_USE_CURRENT_ORIGIN;
 	bolt->s.weapon = WP_LIGHTNING;
 	bolt->r.ownerNum = self->s.number;
 	bolt->parent = self;
-	bolt->damage = 20;
-	bolt->splashDamage = 15;
-	bolt->splashRadius = 20;
+	bolt->damage = 60;
+	bolt->splashDamage = 80;
+	bolt->splashRadius = 100;
 	bolt->methodOfDeath = MOD_PROX_MINE;
 	bolt->clipmask = MASK_SHOT;
 	bolt->target_ent = NULL;
@@ -572,11 +572,8 @@ gentity_t *fire_plasma (gentity_t *self, vec3_t start, vec3_t dir) {
 	bolt->s.weapon = WP_PLASMAGUN;
 	bolt->r.ownerNum = self->s.number;
 	bolt->parent = self;
-	bolt->damage = 20;
-	bolt->splashDamage = 15;
-	bolt->splashRadius = 20;
+	bolt->damage = 80;
 	bolt->methodOfDeath = MOD_PLASMA;
-	bolt->splashMethodOfDeath = MOD_PLASMA_SPLASH;
 	bolt->clipmask = MASK_SHOT;
 	bolt->target_ent = NULL;
 

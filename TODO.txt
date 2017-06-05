@@ -9,11 +9,11 @@ Class System:				Stock weapon:		Functionality (X = none, O = some, V = full):
 	- Sonar buoy			- WP_RAILGUN		- X
 	- Spear gun			- WP_PLASMAGUN		- O
 - Mineman
-	- Proximity mine		- WP_LIGHTNING		- X
+	- Proximity mine		- WP_LIGHTNING		- o
 	- Grenade launcher		- WP_GRENADE_LAUNCHER	- V
 - Gunner
 	- Torpedo launcher		- WP_ROCKET_LAUNCHER	- V
-	- Net gun			- WP_SHOTGUN		- X
+	- Net gun			- WP_SHOTGUN		- 0
 
 Stuff:					Status:
 - Add air tank model to players		- 

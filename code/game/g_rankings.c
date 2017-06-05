@@ -705,6 +705,7 @@ G_RankPickupWeapon
 */
 void G_RankPickupWeapon( int self, int weapon )
 {
+	/********DEEPWATER******** //prevent weapon pickups
 	if( level.warmupTime != 0 )
 	{
 		// no reports during warmup period
@@ -747,6 +748,7 @@ void G_RankPickupWeapon( int self, int weapon )
 	default:
 		break;
 	}
+	/*************************/
 }
 
 /*
@@ -756,6 +758,7 @@ G_RankPickupAmmo
 */
 void G_RankPickupAmmo( int self, int weapon, int quantity )
 {
+	/********DEEPWATER******** //prevent ammo pickups
 	if( level.warmupTime != 0 )
 	{
 		// no reports during warmup period
@@ -802,6 +805,7 @@ void G_RankPickupAmmo( int self, int weapon, int quantity )
 	default:
 		break;
 	}
+	/*************************/
 }
 
 /*

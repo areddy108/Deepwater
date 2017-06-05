@@ -694,7 +694,7 @@ void CG_RegisterWeapon( int weaponNum ) {
 		break;
 
 	case WP_LIGHTNING:
-		/*
+		/********DEEPWATER******** //set prox mine model
 		MAKERGB( weaponInfo->flashDlightColor, 0.6f, 0.6f, 1.0f );
 		weaponInfo->readySound = trap_S_RegisterSound( "sound/weapons/melee/fsthum.wav", qfalse );
 		weaponInfo->firingSound = trap_S_RegisterSound( "sound/weapons/lightning/lg_hum.wav", qfalse );
@@ -716,6 +716,7 @@ void CG_RegisterWeapon( int weaponNum ) {
 		weaponInfo->flashSound[0] = trap_S_RegisterSound( "sound/weapons/grenade/grenlf1a.wav", qfalse );
 		cgs.media.grenadeExplosionShader = trap_R_RegisterShader( "grenadeExplosion" );
 		break;
+		/****************************/
 
 	case WP_GRAPPLING_HOOK:
 		MAKERGB( weaponInfo->flashDlightColor, 0.6f, 0.6f, 1.0f );
@@ -1821,7 +1822,7 @@ void CG_MissileHitWall( int weapon, int clientNum, vec3_t origin, vec3_t dir, im
 		break;
 #endif
 	case WP_LIGHTNING:
-		/*DEEPWATER
+		/********DEEPWATER******** //get rid of lightning beam
 		// no explosion at LG impact, it is added with the beam
 		r = rand() & 3;
 		if ( r < 2 ) {
@@ -1834,7 +1835,7 @@ void CG_MissileHitWall( int weapon, int clientNum, vec3_t origin, vec3_t dir, im
 		mark = cgs.media.holeMarkShader;
 		radius = 12;
 		break;
-		*/
+		/*************************/
 		mod = cgs.media.dishFlashModel;
 		shader = cgs.media.grenadeExplosionShader;
 		sfx = cgs.media.sfx_rockexp;

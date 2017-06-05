@@ -2283,6 +2283,7 @@ CG_DrawAmmoWarning
 =================
 */
 static void CG_DrawAmmoWarning( void ) {
+	/********DEEPWATER******** //ignore ammo warnings
 	const char	*s;
 	int			w;
 
@@ -2301,6 +2302,7 @@ static void CG_DrawAmmoWarning( void ) {
 	}
 	w = CG_DrawStrlen( s ) * BIGCHAR_WIDTH;
 	CG_DrawBigString(320 - w / 2, 64, s, 1.0F);
+	/*************************/
 }
 
 

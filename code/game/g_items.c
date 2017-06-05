@@ -233,8 +233,8 @@ int Pickup_Ammo (gentity_t *ent, gentity_t *other)
 
 //======================================================================
 
-
 int Pickup_Weapon (gentity_t *ent, gentity_t *other) {
+	/********DEEPWATER******** //nein weapon pickups
 	int		quantity;
 
 	if ( ent->count < 0 ) {
@@ -272,8 +272,10 @@ int Pickup_Weapon (gentity_t *ent, gentity_t *other) {
 	}
 
 	return g_weaponRespawn.integer;
+	*/
+	return 0;
+	/*************************/
 }
-
 
 //======================================================================
 
