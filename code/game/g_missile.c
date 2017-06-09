@@ -781,6 +781,7 @@ fire_grapple
 =================
 */
 gentity_t *fire_grapple (gentity_t *self, vec3_t start, vec3_t dir) {
+	/********DEEPWATER******** //turn grapple into sea doo
 	gentity_t	*hook;
 
 	VectorNormalize (dir);
@@ -802,13 +803,26 @@ gentity_t *fire_grapple (gentity_t *self, vec3_t start, vec3_t dir) {
 	hook->s.pos.trTime = level.time - MISSILE_PRESTEP_TIME;		// move a bit on the very first frame
 	hook->s.otherEntityNum = self->s.number; // use to match beam in client
 	VectorCopy( start, hook->s.pos.trBase );
-	VectorScale( dir, 800, hook->s.pos.trDelta );
+	VectorScale( dir, 8000, hook->s.pos.trDelta );
 	SnapVector( hook->s.pos.trDelta );			// save net bandwidth
 	VectorCopy (start, hook->r.currentOrigin);
 
 	self->client->hook = hook;
-
+	
 	return hook;
+	*/
+
+	//Move forward
+	int accel = 10;
+
+	VectorNormalize(dir);
+
+	VectorScale(dir, accel, dir);
+
+	VectorAdd(dir, self->client->ps.velocity, self->client->ps.velocity);
+
+	return NULL;
+	/*************************/
 }
 
 #ifdef MISSIONPACK

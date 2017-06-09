@@ -1682,7 +1682,10 @@ static void PM_Weapon( void ) {
 		addTime = 200;
 		break;
 	case WP_GRAPPLING_HOOK:
-		addTime = 400;
+		//********DEEPWATER******** //constant grapple call
+		//addTime = 400;
+		addTime = 10;
+		//*************************/
 		break;
 #ifdef MISSIONPACK
 	case WP_NAILGUN:

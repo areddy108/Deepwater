@@ -586,10 +586,14 @@ GRAPPLING HOOK
 
 void Weapon_GrapplingHook_Fire (gentity_t *ent)
 {
+	/********DEEPWATER********
 	if (!ent->client->fireHeld && !ent->client->hook)
 		fire_grapple (ent, muzzle, forward);
 
 	ent->client->fireHeld = qtrue;
+	*/
+	fire_grapple (ent, muzzle, forward);
+	/*************************/
 }
 
 void Weapon_HookFree (gentity_t *ent)

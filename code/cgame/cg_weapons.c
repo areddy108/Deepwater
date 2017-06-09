@@ -719,6 +719,7 @@ void CG_RegisterWeapon( int weaponNum ) {
 		/****************************/
 
 	case WP_GRAPPLING_HOOK:
+		/********DEEPWATER
 		MAKERGB( weaponInfo->flashDlightColor, 0.6f, 0.6f, 1.0f );
 		weaponInfo->missileModel = trap_R_RegisterModel( "models/ammo/rocket/rocket.md3" );
 		weaponInfo->missileTrailFunc = CG_GrappleTrail;
@@ -726,6 +727,7 @@ void CG_RegisterWeapon( int weaponNum ) {
 		weaponInfo->wiTrailTime = 2000;
 		weaponInfo->trailRadius = 64;
 		MAKERGB( weaponInfo->missileDlightColor, 1, 0.75f, 0 );
+		*/
 		weaponInfo->readySound = trap_S_RegisterSound( "sound/weapons/melee/fsthum.wav", qfalse );
 		weaponInfo->firingSound = trap_S_RegisterSound( "sound/weapons/melee/fstrun.wav", qfalse );
 		break;
@@ -1329,6 +1331,8 @@ void CG_AddPlayerWeapon( refEntity_t *parent, playerState_t *ps, centity_t *cent
 	}
 
 	// add the flash
+	//DEEPWATER
+	/*
 	if ( ( weaponNum == WP_LIGHTNING || weaponNum == WP_GAUNTLET || weaponNum == WP_GRAPPLING_HOOK )
 		&& ( nonPredictedCent->currentState.eFlags & EF_FIRING ) ) 
 	{
@@ -1339,6 +1343,7 @@ void CG_AddPlayerWeapon( refEntity_t *parent, playerState_t *ps, centity_t *cent
 			return;
 		}
 	}
+	*/
 
 	memset( &flash, 0, sizeof( flash ) );
 	VectorCopy( parent->lightingOrigin, flash.lightingOrigin );
